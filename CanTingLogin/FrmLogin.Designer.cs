@@ -38,11 +38,11 @@ namespace CanTingLogin
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ubtnLogin = new Sunny.UI.UIButton();
             this.cbkRememberPwd = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.ubtnLogin = new Sunny.UI.UIButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +146,25 @@ namespace CanTingLogin
             this.panel1.Size = new System.Drawing.Size(440, 390);
             this.panel1.TabIndex = 22;
             // 
+            // ubtnLogin
+            // 
+            this.ubtnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.ubtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ubtnLogin.FillColor = System.Drawing.Color.LavenderBlush;
+            this.ubtnLogin.FillHoverColor = System.Drawing.Color.CornflowerBlue;
+            this.ubtnLogin.Font = new System.Drawing.Font("楷体", 15.12605F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ubtnLogin.ForeColor = System.Drawing.Color.Black;
+            this.ubtnLogin.Location = new System.Drawing.Point(28, 253);
+            this.ubtnLogin.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ubtnLogin.Name = "ubtnLogin";
+            this.ubtnLogin.Radius = 30;
+            this.ubtnLogin.RectColor = System.Drawing.Color.Transparent;
+            this.ubtnLogin.Size = new System.Drawing.Size(376, 45);
+            this.ubtnLogin.Style = Sunny.UI.UIStyle.Custom;
+            this.ubtnLogin.TabIndex = 20;
+            this.ubtnLogin.Text = "登录";
+            this.ubtnLogin.Click += new System.EventHandler(this.ubtnLogin_Click);
+            // 
             // cbkRememberPwd
             // 
             this.cbkRememberPwd.AutoSize = true;
@@ -195,25 +214,6 @@ namespace CanTingLogin
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "立即注册|";
             this.linkLabel1.Click += new System.EventHandler(this.linkLabel1_Click);
-            // 
-            // ubtnLogin
-            // 
-            this.ubtnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.ubtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ubtnLogin.FillColor = System.Drawing.Color.LavenderBlush;
-            this.ubtnLogin.FillHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.ubtnLogin.Font = new System.Drawing.Font("楷体", 15.12605F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ubtnLogin.ForeColor = System.Drawing.Color.Black;
-            this.ubtnLogin.Location = new System.Drawing.Point(28, 253);
-            this.ubtnLogin.MinimumSize = new System.Drawing.Size(1, 1);
-            this.ubtnLogin.Name = "ubtnLogin";
-            this.ubtnLogin.Radius = 30;
-            this.ubtnLogin.RectColor = System.Drawing.Color.Transparent;
-            this.ubtnLogin.Size = new System.Drawing.Size(376, 45);
-            this.ubtnLogin.Style = Sunny.UI.UIStyle.Custom;
-            this.ubtnLogin.TabIndex = 20;
-            this.ubtnLogin.Text = "登录";
-            this.ubtnLogin.Click += new System.EventHandler(this.ubtnLogin_Click);
             // 
             // FrmLogin
             // 
