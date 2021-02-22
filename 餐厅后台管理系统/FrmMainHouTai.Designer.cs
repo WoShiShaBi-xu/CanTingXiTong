@@ -1,7 +1,7 @@
 ﻿
 namespace 餐厅后台管理系统
 {
-    partial class FrmMain
+    partial class FrmMainHouTai
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 餐厅后台管理系统
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainHouTai));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.营业准备ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.座位停用设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();

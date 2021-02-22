@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanTingHouTaiBLL", "CanTing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanTingHouTaiDAL", "CanTingHouTaiDAL\CanTingHouTaiDAL.csproj", "{A07F6523-6665-4390-9B7C-B02477573848}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanTingLogin", "CanTingLogin\CanTingLogin.csproj", "{4E4E870B-968E-4B0C-B07B-E01BE92EF492}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A07F6523-6665-4390-9B7C-B02477573848}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A07F6523-6665-4390-9B7C-B02477573848}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A07F6523-6665-4390-9B7C-B02477573848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4E870B-968E-4B0C-B07B-E01BE92EF492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4E870B-968E-4B0C-B07B-E01BE92EF492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4E870B-968E-4B0C-B07B-E01BE92EF492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4E870B-968E-4B0C-B07B-E01BE92EF492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
