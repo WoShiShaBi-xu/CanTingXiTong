@@ -13,3 +13,4 @@ namespace CanTingModes
         public string ZuoWeiZhuangTaiColor { get; set; }//座位状态描述
     }
 }
+    
