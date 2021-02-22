@@ -8,9 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 餐厅管理系统 {
-    public partial class FrmLiuShuiDanAdd : Form {
-        public FrmLiuShuiDanAdd( ) {
+namespace 餐厅后台管理系统
+{
+    public partial class FrmLiuShuiDanAdd : Form
+    {
+        public FrmLiuShuiDanAdd()
+        {
             InitializeComponent();
         }
     }

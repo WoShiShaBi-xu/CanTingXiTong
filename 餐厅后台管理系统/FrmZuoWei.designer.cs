@@ -1,5 +1,5 @@
 ﻿
-namespace 餐厅
+namespace 餐厅后台管理系统
 {
     partial class FrmZuoWei
     {
@@ -39,13 +39,13 @@ namespace 餐厅
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.btnSave = new Sunny.UI.UIButton();
-            this.uiLabel1 = new Sunny.UI.UILabel();
+            this.CboLouCeng = new Sunny.UI.UIComboBox();
             this.txtZuoWeiMiaoShu = new Sunny.UI.UITextBox();
             this.uiLabel2 = new Sunny.UI.UILabel();
-            this.CboLouCeng = new Sunny.UI.UIComboBox();
+            this.uiLabel1 = new Sunny.UI.UILabel();
             this.btnSearch = new Sunny.UI.UIButton();
             this.btnBreak = new Sunny.UI.UIButton();
+            this.btnSave = new Sunny.UI.UIButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchZuoWei)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@ namespace 餐厅
             this.dgvSearchZuoWei.EnableHeadersVisualStyles = false;
             this.dgvSearchZuoWei.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.dgvSearchZuoWei.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.dgvSearchZuoWei.Location = new System.Drawing.Point(5, 59);
+            this.dgvSearchZuoWei.Location = new System.Drawing.Point(9, 58);
             this.dgvSearchZuoWei.Name = "dgvSearchZuoWei";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -96,7 +96,7 @@ namespace 餐厅
             this.dgvSearchZuoWei.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSearchZuoWei.Size = new System.Drawing.Size(967, 628);
             this.dgvSearchZuoWei.StripeOddColor = System.Drawing.Color.LightBlue;
-            this.dgvSearchZuoWei.TabIndex = 0;
+            this.dgvSearchZuoWei.TabIndex = 5;
             // 
             // Column1
             // 
@@ -128,57 +128,6 @@ namespace 餐厅
             this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // btnSave
-            // 
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.FillColor = System.Drawing.Color.Firebrick;
-            this.btnSave.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSave.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSave.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnSave.Location = new System.Drawing.Point(700, 706);
-            this.btnSave.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Radius = 15;
-            this.btnSave.Size = new System.Drawing.Size(110, 39);
-            this.btnSave.Style = Sunny.UI.UIStyle.Custom;
-            this.btnSave.TabIndex = 1;
-            this.btnSave.Text = "保存";
-            // 
-            // uiLabel1
-            // 
-            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiLabel1.Location = new System.Drawing.Point(12, 13);
-            this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(146, 34);
-            this.uiLabel1.TabIndex = 2;
-            this.uiLabel1.Text = "座位描述：";
-            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtZuoWeiMiaoShu
-            // 
-            this.txtZuoWeiMiaoShu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtZuoWeiMiaoShu.FillColor = System.Drawing.Color.White;
-            this.txtZuoWeiMiaoShu.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.txtZuoWeiMiaoShu.Location = new System.Drawing.Point(165, 13);
-            this.txtZuoWeiMiaoShu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtZuoWeiMiaoShu.Maximum = 2147483647D;
-            this.txtZuoWeiMiaoShu.Minimum = -2147483648D;
-            this.txtZuoWeiMiaoShu.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtZuoWeiMiaoShu.Name = "txtZuoWeiMiaoShu";
-            this.txtZuoWeiMiaoShu.Padding = new System.Windows.Forms.Padding(5);
-            this.txtZuoWeiMiaoShu.Size = new System.Drawing.Size(199, 34);
-            this.txtZuoWeiMiaoShu.TabIndex = 3;
-            // 
-            // uiLabel2
-            // 
-            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiLabel2.Location = new System.Drawing.Point(432, 14);
-            this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(83, 34);
-            this.uiLabel2.TabIndex = 2;
-            this.uiLabel2.Text = "楼层：";
-            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // CboLouCeng
             // 
             this.CboLouCeng.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
@@ -187,27 +136,62 @@ namespace 餐厅
             this.CboLouCeng.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.CboLouCeng.Location = new System.Drawing.Point(503, 13);
+            this.CboLouCeng.Location = new System.Drawing.Point(507, 12);
             this.CboLouCeng.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CboLouCeng.MinimumSize = new System.Drawing.Size(63, 0);
             this.CboLouCeng.Name = "CboLouCeng";
             this.CboLouCeng.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.CboLouCeng.Size = new System.Drawing.Size(186, 34);
-            this.CboLouCeng.TabIndex = 4;
+            this.CboLouCeng.TabIndex = 12;
             this.CboLouCeng.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtZuoWeiMiaoShu
+            // 
+            this.txtZuoWeiMiaoShu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZuoWeiMiaoShu.FillColor = System.Drawing.Color.White;
+            this.txtZuoWeiMiaoShu.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.txtZuoWeiMiaoShu.Location = new System.Drawing.Point(169, 12);
+            this.txtZuoWeiMiaoShu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtZuoWeiMiaoShu.Maximum = 2147483647D;
+            this.txtZuoWeiMiaoShu.Minimum = -2147483648D;
+            this.txtZuoWeiMiaoShu.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtZuoWeiMiaoShu.Name = "txtZuoWeiMiaoShu";
+            this.txtZuoWeiMiaoShu.Padding = new System.Windows.Forms.Padding(5);
+            this.txtZuoWeiMiaoShu.Size = new System.Drawing.Size(199, 34);
+            this.txtZuoWeiMiaoShu.TabIndex = 11;
+            // 
+            // uiLabel2
+            // 
+            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel2.Location = new System.Drawing.Point(436, 13);
+            this.uiLabel2.Name = "uiLabel2";
+            this.uiLabel2.Size = new System.Drawing.Size(83, 34);
+            this.uiLabel2.TabIndex = 9;
+            this.uiLabel2.Text = "楼层：";
+            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel1
+            // 
+            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel1.Location = new System.Drawing.Point(16, 12);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(146, 34);
+            this.uiLabel1.TabIndex = 10;
+            this.uiLabel1.Text = "座位描述：";
+            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnSearch
             // 
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.FillColor = System.Drawing.Color.SteelBlue;
             this.btnSearch.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnSearch.Location = new System.Drawing.Point(760, 13);
+            this.btnSearch.Location = new System.Drawing.Point(764, 12);
             this.btnSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Radius = 30;
             this.btnSearch.Size = new System.Drawing.Size(127, 35);
             this.btnSearch.Style = Sunny.UI.UIStyle.Custom;
-            this.btnSearch.TabIndex = 1;
+            this.btnSearch.TabIndex = 6;
             this.btnSearch.Text = "检索";
             // 
             // btnBreak
@@ -217,20 +201,37 @@ namespace 餐厅
             this.btnBreak.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnBreak.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnBreak.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnBreak.Location = new System.Drawing.Point(835, 706);
+            this.btnBreak.Location = new System.Drawing.Point(839, 705);
             this.btnBreak.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnBreak.Name = "btnBreak";
             this.btnBreak.Radius = 15;
             this.btnBreak.Size = new System.Drawing.Size(110, 39);
             this.btnBreak.Style = Sunny.UI.UIStyle.Custom;
-            this.btnBreak.TabIndex = 1;
+            this.btnBreak.TabIndex = 7;
             this.btnBreak.Text = "返回";
             // 
-            // FrmZuoWei
+            // btnSave
+            // 
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FillColor = System.Drawing.Color.Firebrick;
+            this.btnSave.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnSave.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnSave.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.btnSave.Location = new System.Drawing.Point(704, 705);
+            this.btnSave.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Radius = 15;
+            this.btnSave.Size = new System.Drawing.Size(110, 39);
+            this.btnSave.Style = Sunny.UI.UIStyle.Custom;
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "保存";
+            // 
+            // FrmZuoWeiTwo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 757);
+            this.Controls.Add(this.dgvSearchZuoWei);
             this.Controls.Add(this.CboLouCeng);
             this.Controls.Add(this.txtZuoWeiMiaoShu);
             this.Controls.Add(this.uiLabel2);
@@ -238,10 +239,8 @@ namespace 餐厅
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnBreak);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.dgvSearchZuoWei);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "FrmZuoWei";
+            this.Name = "FrmZuoWeiTwo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "座位停/用设置";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchZuoWei)).EndInit();
@@ -256,12 +255,12 @@ namespace 餐厅
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column3;
-        private Sunny.UI.UIButton btnSave;
-        private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UIComboBox CboLouCeng;
         private Sunny.UI.UITextBox txtZuoWeiMiaoShu;
         private Sunny.UI.UILabel uiLabel2;
-        private Sunny.UI.UIComboBox CboLouCeng;
+        private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UIButton btnSearch;
         private Sunny.UI.UIButton btnBreak;
+        private Sunny.UI.UIButton btnSave;
     }
 }

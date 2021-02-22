@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HZH_Controls.1.0.14\lib\net40\HZH_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="SunnyUI">
+      <HintPath>..\..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +52,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLiuShuiDanAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLiuShuiDanAdd.Designer.cs">
+      <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLiuShuiDanQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLiuShuiDanQuery.Designer.cs">
+      <DependentUpon>FrmLiuShuiDanQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLouCeng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLouCeng.Designer.cs">
+      <DependentUpon>FrmLouCeng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYuanGong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYuanGong.Designer.cs">
+      <DependentUpon>FrmYuanGong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYuanGongChaXun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYuanGongChaXun.Designer.cs">
+      <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZuoWei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZuoWei.Designer.cs">
+      <DependentUpon>FrmZuoWei.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLiuShuiDanAdd.resx">
+      <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLiuShuiDanQuery.resx">
+      <DependentUpon>FrmLiuShuiDanQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLouCeng.resx">
+      <DependentUpon>FrmLouCeng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYuanGong.resx">
+      <DependentUpon>FrmYuanGong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYuanGongChaXun.resx">
+      <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZuoWei.resx">
+      <DependentUpon>FrmZuoWei.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +135,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

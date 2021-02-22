@@ -1,17 +1,17 @@
 ﻿
-namespace 餐厅管理系统
+namespace 餐厅后台管理系统
 {
     partial class FrmMain
     {
         /// <summary>
-        /// 必需的设计器变量。
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 清理所有正在使用的资源。
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,30 +21,15 @@ namespace 餐厅管理系统
             base.Dispose(disposing);
         }
 
-        #region Windows 窗体设计器生成的代码
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 设计器支持所需的方法 - 不要修改
-        /// 使用代码编辑器修改此方法的内容。
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
-            this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
-            this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
-            this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
-            this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.营业准备ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.座位停用设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,137 +72,19 @@ namespace 餐厅管理系统
             this.退出系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.窗口ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1.SuspendLayout();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BottomToolStripPanel
-            // 
-            this.BottomToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.BottomToolStripPanel.Name = "BottomToolStripPanel";
-            this.BottomToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.BottomToolStripPanel.RowMargin = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.BottomToolStripPanel.Size = new System.Drawing.Size(0, 0);
-            // 
-            // TopToolStripPanel
-            // 
-            this.TopToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.TopToolStripPanel.Name = "TopToolStripPanel";
-            this.TopToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.TopToolStripPanel.RowMargin = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.TopToolStripPanel.Size = new System.Drawing.Size(0, 0);
-            // 
-            // RightToolStripPanel
-            // 
-            this.RightToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.RightToolStripPanel.Name = "RightToolStripPanel";
-            this.RightToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.RightToolStripPanel.RowMargin = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.RightToolStripPanel.Size = new System.Drawing.Size(0, 0);
-            // 
-            // LeftToolStripPanel
-            // 
-            this.LeftToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.LeftToolStripPanel.Name = "LeftToolStripPanel";
-            this.LeftToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.LeftToolStripPanel.RowMargin = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.LeftToolStripPanel.Size = new System.Drawing.Size(0, 0);
-            // 
-            // ContentPanel
-            // 
-            this.ContentPanel.Size = new System.Drawing.Size(150, 150);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.LightCyan;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton8,
-            this.toolStripButton3,
-            this.toolStripButton4,
-            this.toolStripButton5,
-            this.toolStripButton6,
-            this.toolStripButton9,
-            this.toolStripButton7});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1273, 27);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(78, 24);
-            this.toolStripButton1.Text = "销售品";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(108, 24);
-            this.toolStripButton2.Text = "营业额统计";
-            // 
-            // toolStripButton8
-            // 
-            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Size = new System.Drawing.Size(123, 24);
-            this.toolStripButton8.Text = "人均消费报表";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(108, 24);
-            this.toolStripButton3.Text = "销售热销榜";
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(78, 24);
-            this.toolStripButton4.Text = "流水单";
-            // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(93, 24);
-            this.toolStripButton5.Text = "客人信息";
-            // 
-            // toolStripButton6
-            // 
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(123, 24);
-            this.toolStripButton6.Text = "修改登录密码";
-            // 
-            // toolStripButton9
-            // 
-            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(93, 24);
-            this.toolStripButton9.Text = "楼层设置";
-            // 
-            // toolStripButton7
-            // 
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(93, 24);
-            this.toolStripButton7.Text = "退出系统";
             // 
             // menuStrip1
             // 
@@ -238,7 +105,7 @@ namespace 餐厅管理系统
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1273, 28);
-            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 营业准备ToolStripMenuItem
@@ -260,7 +127,6 @@ namespace 餐厅管理系统
             | System.Windows.Forms.Keys.Y)));
             this.座位停用设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.座位停用设置ToolStripMenuItem.Text = "座位停/用设置";
-            this.座位停用设置ToolStripMenuItem.Click += new System.EventHandler(this.座位停用设置ToolStripMenuItem_Click);
             // 
             // 菜品停用设置ToolStripMenuItem
             // 
@@ -285,7 +151,6 @@ namespace 餐厅管理系统
             | System.Windows.Forms.Keys.L)));
             this.大厅楼层设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.大厅楼层设置ToolStripMenuItem.Text = "大厅楼层设置";
-            this.大厅楼层设置ToolStripMenuItem.Click += new System.EventHandler(this.大厅楼层设置ToolStripMenuItem_Click);
             // 
             // 销售品设置ToolStripMenuItem
             // 
@@ -391,7 +256,6 @@ namespace 餐厅管理系统
             | System.Windows.Forms.Keys.F1)));
             this.添加新员工ToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
             this.添加新员工ToolStripMenuItem.Text = "添加新员工";
-            this.添加新员工ToolStripMenuItem.Click += new System.EventHandler(this.添加新员工ToolStripMenuItem_Click);
             // 
             // 查询员工基本信息ToolStripMenuItem
             // 
@@ -591,29 +455,115 @@ namespace 餐厅管理系统
             this.关于HToolStripMenuItem.Name = "关于HToolStripMenuItem";
             this.关于HToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.关于HToolStripMenuItem.Text = "关于(&H)";
-            this.关于HToolStripMenuItem.Click += new System.EventHandler(this.关于HToolStripMenuItem_Click);
             // 
-            // FrmMain
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.LightCyan;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton8,
+            this.toolStripButton3,
+            this.toolStripButton4,
+            this.toolStripButton5,
+            this.toolStripButton6,
+            this.toolStripButton9,
+            this.toolStripButton7});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1273, 31);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(78, 28);
+            this.toolStripButton1.Text = "销售品";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(108, 24);
+            this.toolStripButton2.Text = "营业额统计";
+            // 
+            // toolStripButton8
+            // 
+            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
+            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton8.Name = "toolStripButton8";
+            this.toolStripButton8.Size = new System.Drawing.Size(123, 24);
+            this.toolStripButton8.Text = "人均消费报表";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(108, 24);
+            this.toolStripButton3.Text = "销售热销榜";
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(78, 24);
+            this.toolStripButton4.Text = "流水单";
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(93, 24);
+            this.toolStripButton5.Text = "客人信息";
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(123, 24);
+            this.toolStripButton6.Text = "修改登录密码";
+            // 
+            // toolStripButton9
+            // 
+            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
+            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton9.Name = "toolStripButton9";
+            this.toolStripButton9.Size = new System.Drawing.Size(93, 24);
+            this.toolStripButton9.Text = "楼层设置";
+            // 
+            // toolStripButton7
+            // 
+            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
+            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton7.Name = "toolStripButton7";
+            this.toolStripButton7.Size = new System.Drawing.Size(93, 24);
+            this.toolStripButton7.Text = "退出系统";
+            // 
+            // FrmMainTwo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1273, 660);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FrmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "餐厅后台管理系统";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.Name = "FrmMainTwo";
+            this.Text = "餐厅管理系统后台主界面";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmMain_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -621,46 +571,35 @@ namespace 餐厅管理系统
 
         #endregion
 
-        private System.Windows.Forms.ToolStripPanel BottomToolStripPanel;
-        private System.Windows.Forms.ToolStripPanel TopToolStripPanel;
-        private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
-        private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
-        private System.Windows.Forms.ToolStripContentPanel ContentPanel;
-        private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 营业准备ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 座位停用设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 菜品停用设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 沽清设置ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 大厅楼层设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 销售品设置ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 统计ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 员工设置GToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 添加销售品ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 多条件查询销售品ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 流水单设置ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 座位设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 修改销售品信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除销售品ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 热销榜查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 日营业额统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 人均消费报表ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 员工工资报表ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 员工设置GToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 添加新员工ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查询员工基本信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 修改员工信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除员工ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 流水单设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查询流水单ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 添加前台外必要流水单ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 座位设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 更新座位ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 座位维修设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 修改座位基本信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除座位ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.ToolStripMenuItem 热销榜查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 客人信息设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 客人基本信息查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 添加客人信息ToolStripMenuItem;
@@ -671,13 +610,18 @@ namespace 餐厅管理系统
         private System.Windows.Forms.ToolStripMenuItem 前台锁定ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 系统ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 恢复出厂设置ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 退出系统ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 窗口ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 关于HToolStripMenuItem;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton8;
-        private System.Windows.Forms.ToolStripButton toolStripButton7;
-        private System.Windows.Forms.ToolStripMenuItem 退出系统ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripButton toolStripButton9;
-        private System.Windows.Forms.ToolStripMenuItem 大厅楼层设置ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton7;
     }
 }
-
