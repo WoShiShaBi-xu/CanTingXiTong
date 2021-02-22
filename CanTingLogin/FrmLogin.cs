@@ -39,6 +39,7 @@ namespace CanTingLogin
             Thread.Sleep(2000);
             frm.Close();
         }
+
         /// <summary>
         /// 囧i哦
         /// </summary>
