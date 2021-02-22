@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DBF1B5B6-E5E3-48D0-9F06-2F7EA6A6098A}</ProjectGuid>
+    <ProjectGuid>{9DB4B631-5F0A-4B35-AC4E-A10DB476CF8E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>餐厅</RootNamespace>
-    <AssemblyName>餐厅</AssemblyName>
+    <RootNamespace>餐厅后台管理系统</RootNamespace>
+    <AssemblyName>餐厅后台管理系统</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -36,6 +36,9 @@
     <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HZH_Controls.1.0.14\lib\net40\HZH_Controls.dll</HintPath>
     </Reference>
+    <Reference Include="SunnyUI">
+      <HintPath>..\..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,25 +52,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLiuShuiDanAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLiuShuiDanAdd.Designer.cs">
+      <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLiuShuiDanQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLiuShuiDanQuery.Designer.cs">
+      <DependentUpon>FrmLiuShuiDanQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLouCeng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLouCeng.Designer.cs">
+      <DependentUpon>FrmLouCeng.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMain.designer.cs">
+    <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormJiaDan.cs">
+    <Compile Include="FrmYuanGong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormJiaDan.Designer.cs">
-      <DependentUpon>FormJiaDan.cs</DependentUpon>
+    <Compile Include="FrmYuanGong.Designer.cs">
+      <DependentUpon>FrmYuanGong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYuanGongChaXun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYuanGongChaXun.Designer.cs">
+      <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZuoWei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZuoWei.Designer.cs">
+      <DependentUpon>FrmZuoWei.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLiuShuiDanAdd.resx">
+      <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLiuShuiDanQuery.resx">
+      <DependentUpon>FrmLiuShuiDanQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLouCeng.resx">
+      <DependentUpon>FrmLouCeng.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormJiaDan.resx">
-      <DependentUpon>FormJiaDan.cs</DependentUpon>
+    <EmbeddedResource Include="FrmYuanGong.resx">
+      <DependentUpon>FrmYuanGong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYuanGongChaXun.resx">
+      <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZuoWei.resx">
+      <DependentUpon>FrmZuoWei.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

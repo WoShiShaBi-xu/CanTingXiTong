@@ -1,6 +1,6 @@
 ﻿
 namespace 餐厅 {
-    partial class Form1 {
+    partial class FrmMain {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -25,7 +25,7 @@ namespace 餐厅 {
         /// </summary>
         private void InitializeComponent( ) {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("大厅");
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -36,7 +36,6 @@ namespace 餐厅 {
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,19 +53,20 @@ namespace 餐厅 {
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ucBtnExt3 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt2 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
             this.btnReXiao = new HZH_Controls.Controls.UCBtnExt();
             this.btnQiCai = new HZH_Controls.Controls.UCBtnExt();
             this.btnTuiDan = new HZH_Controls.Controls.UCBtnExt();
             this.btnJiaDan = new HZH_Controls.Controls.UCBtnExt();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt2 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt3 = new HZH_Controls.Controls.UCBtnExt();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.toolStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripButton7
@@ -94,7 +94,7 @@ namespace 餐厅 {
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(69, 70);
-            this.toolStripButton2.Text = "销售";
+            this.toolStripButton2.Text = "销售单";
             this.toolStripButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -170,22 +170,6 @@ namespace 餐厅 {
             this.toolStrip1.Size = new System.Drawing.Size(1924, 90);
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.ucBtnExt3);
-            this.groupBox1.Controls.Add(this.ucBtnExt2);
-            this.groupBox1.Controls.Add(this.ucBtnExt1);
-            this.groupBox1.Location = new System.Drawing.Point(256, 93);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1650, 636);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "座位";
             // 
             // groupBox2
             // 
@@ -348,85 +332,6 @@ namespace 餐厅 {
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             // 
-            // ucBtnExt3
-            // 
-            this.ucBtnExt3.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt3.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt3.BtnText = "餐桌1号";
-            this.ucBtnExt3.ConerRadius = 40;
-            this.ucBtnExt3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt3.EnabledMouseEffect = false;
-            this.ucBtnExt3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
-            this.ucBtnExt3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt3.IsRadius = true;
-            this.ucBtnExt3.IsShowRect = true;
-            this.ucBtnExt3.IsShowTips = false;
-            this.ucBtnExt3.Location = new System.Drawing.Point(353, 21);
-            this.ucBtnExt3.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt3.Name = "ucBtnExt3";
-            this.ucBtnExt3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
-            this.ucBtnExt3.RectWidth = 1;
-            this.ucBtnExt3.Size = new System.Drawing.Size(145, 133);
-            this.ucBtnExt3.TabIndex = 0;
-            this.ucBtnExt3.TabStop = false;
-            this.ucBtnExt3.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt3.TipsText = "";
-            // 
-            // ucBtnExt2
-            // 
-            this.ucBtnExt2.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt2.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnText = "餐桌1号";
-            this.ucBtnExt2.ConerRadius = 40;
-            this.ucBtnExt2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt2.EnabledMouseEffect = false;
-            this.ucBtnExt2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
-            this.ucBtnExt2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt2.IsRadius = true;
-            this.ucBtnExt2.IsShowRect = true;
-            this.ucBtnExt2.IsShowTips = false;
-            this.ucBtnExt2.Location = new System.Drawing.Point(193, 21);
-            this.ucBtnExt2.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt2.Name = "ucBtnExt2";
-            this.ucBtnExt2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
-            this.ucBtnExt2.RectWidth = 1;
-            this.ucBtnExt2.Size = new System.Drawing.Size(145, 133);
-            this.ucBtnExt2.TabIndex = 0;
-            this.ucBtnExt2.TabStop = false;
-            this.ucBtnExt2.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt2.TipsText = "";
-            // 
-            // ucBtnExt1
-            // 
-            this.ucBtnExt1.BackColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt1.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnText = "餐桌1号";
-            this.ucBtnExt1.ConerRadius = 40;
-            this.ucBtnExt1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt1.EnabledMouseEffect = false;
-            this.ucBtnExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
-            this.ucBtnExt1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt1.IsRadius = true;
-            this.ucBtnExt1.IsShowRect = true;
-            this.ucBtnExt1.IsShowTips = false;
-            this.ucBtnExt1.Location = new System.Drawing.Point(34, 21);
-            this.ucBtnExt1.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt1.Name = "ucBtnExt1";
-            this.ucBtnExt1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
-            this.ucBtnExt1.RectWidth = 1;
-            this.ucBtnExt1.Size = new System.Drawing.Size(145, 133);
-            this.ucBtnExt1.TabIndex = 0;
-            this.ucBtnExt1.TabStop = false;
-            this.ucBtnExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt1.TipsText = "";
-            this.ucBtnExt1.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick);
-            // 
             // btnReXiao
             // 
             this.btnReXiao.BackColor = System.Drawing.Color.White;
@@ -438,7 +343,7 @@ namespace 餐厅 {
             this.btnReXiao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReXiao.Enabled = false;
             this.btnReXiao.EnabledMouseEffect = false;
-            this.btnReXiao.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(221)))), ((int)(((byte)(203)))));
+            this.btnReXiao.FillColor = System.Drawing.Color.IndianRed;
             this.btnReXiao.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnReXiao.IsRadius = true;
             this.btnReXiao.IsShowRect = true;
@@ -559,7 +464,102 @@ namespace 餐厅 {
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "文件夹.png");
             // 
-            // Form1
+            // ucBtnExt1
+            // 
+            this.ucBtnExt1.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt1.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt1.BtnFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt1.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt1.BtnText = "餐桌1号";
+            this.ucBtnExt1.ConerRadius = 40;
+            this.ucBtnExt1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt1.EnabledMouseEffect = false;
+            this.ucBtnExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
+            this.ucBtnExt1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt1.IsRadius = true;
+            this.ucBtnExt1.IsShowRect = true;
+            this.ucBtnExt1.IsShowTips = false;
+            this.ucBtnExt1.Location = new System.Drawing.Point(32, 27);
+            this.ucBtnExt1.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt1.Name = "ucBtnExt1";
+            this.ucBtnExt1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
+            this.ucBtnExt1.RectWidth = 1;
+            this.ucBtnExt1.Size = new System.Drawing.Size(145, 133);
+            this.ucBtnExt1.TabIndex = 0;
+            this.ucBtnExt1.TabStop = false;
+            this.ucBtnExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt1.TipsText = "";
+            this.ucBtnExt1.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick);
+            // 
+            // ucBtnExt2
+            // 
+            this.ucBtnExt2.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt2.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt2.BtnFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt2.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt2.BtnText = "餐桌1号";
+            this.ucBtnExt2.ConerRadius = 40;
+            this.ucBtnExt2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt2.EnabledMouseEffect = false;
+            this.ucBtnExt2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
+            this.ucBtnExt2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt2.IsRadius = true;
+            this.ucBtnExt2.IsShowRect = true;
+            this.ucBtnExt2.IsShowTips = false;
+            this.ucBtnExt2.Location = new System.Drawing.Point(191, 27);
+            this.ucBtnExt2.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt2.Name = "ucBtnExt2";
+            this.ucBtnExt2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
+            this.ucBtnExt2.RectWidth = 1;
+            this.ucBtnExt2.Size = new System.Drawing.Size(145, 133);
+            this.ucBtnExt2.TabIndex = 0;
+            this.ucBtnExt2.TabStop = false;
+            this.ucBtnExt2.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt2.TipsText = "";
+            // 
+            // ucBtnExt3
+            // 
+            this.ucBtnExt3.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt3.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt3.BtnFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt3.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt3.BtnText = "餐桌1号";
+            this.ucBtnExt3.ConerRadius = 40;
+            this.ucBtnExt3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt3.EnabledMouseEffect = false;
+            this.ucBtnExt3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
+            this.ucBtnExt3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt3.IsRadius = true;
+            this.ucBtnExt3.IsShowRect = true;
+            this.ucBtnExt3.IsShowTips = false;
+            this.ucBtnExt3.Location = new System.Drawing.Point(351, 27);
+            this.ucBtnExt3.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt3.Name = "ucBtnExt3";
+            this.ucBtnExt3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(175)))), ((int)(((byte)(155)))));
+            this.ucBtnExt3.RectWidth = 1;
+            this.ucBtnExt3.Size = new System.Drawing.Size(145, 133);
+            this.ucBtnExt3.TabIndex = 0;
+            this.ucBtnExt3.TabStop = false;
+            this.ucBtnExt3.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt3.TipsText = "";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.ucBtnExt3);
+            this.groupBox1.Controls.Add(this.ucBtnExt2);
+            this.groupBox1.Controls.Add(this.ucBtnExt1);
+            this.groupBox1.Location = new System.Drawing.Point(256, 93);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1650, 636);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "座位";
+            // 
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -575,16 +575,16 @@ namespace 餐厅 {
             this.Controls.Add(this.btnTuiDan);
             this.Controls.Add(this.btnJiaDan);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "Form1";
+            this.Name = "FrmMain";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,10 +600,6 @@ namespace 餐厅 {
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt1;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt3;
-        private HZH_Controls.Controls.UCBtnExt ucBtnExt2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -627,5 +623,9 @@ namespace 餐厅 {
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.ImageList imageList1;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt1;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt2;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt3;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
