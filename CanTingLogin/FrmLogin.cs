@@ -39,6 +39,11 @@ namespace CanTingLogin
             Thread.Sleep(2000);
             frm.Close();
         }
+        /// <summary>
+        /// 囧i哦
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void linkLabel1_Click(object sender, EventArgs e)
         {
