@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9DB4B631-5F0A-4B35-AC4E-A10DB476CF8E}</ProjectGuid>
+    <ProjectGuid>{4E4E870B-968E-4B0C-B07B-E01BE92EF492}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>餐厅后台管理系统</RootNamespace>
-    <AssemblyName>餐厅后台管理系统</AssemblyName>
+    <RootNamespace>CanTingLogin</RootNamespace>
+    <AssemblyName>CanTingLogin</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\HZH_Controls.1.0.14\lib\net40\HZH_Controls.dll</HintPath>
-    </Reference>
     <Reference Include="SunnyUI">
       <HintPath>E:\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
     </Reference>
@@ -52,79 +49,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAbout.cs">
+    <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAbout.Designer.cs">
-      <DependentUpon>FrmAbout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLiuShuiDanAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLiuShuiDanAdd.Designer.cs">
-      <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLiuShuiDanQuery.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLiuShuiDanQuery.Designer.cs">
-      <DependentUpon>FrmLiuShuiDanQuery.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLouCeng.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLouCeng.Designer.cs">
-      <DependentUpon>FrmLouCeng.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMainHouTai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMainHouTai.Designer.cs">
-      <DependentUpon>FrmMainHouTai.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmYuanGong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmYuanGong.Designer.cs">
-      <DependentUpon>FrmYuanGong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmYuanGongChaXun.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmYuanGongChaXun.Designer.cs">
-      <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmZuoWei.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmZuoWei.Designer.cs">
-      <DependentUpon>FrmZuoWei.cs</DependentUpon>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAbout.resx">
-      <DependentUpon>FrmAbout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmLiuShuiDanAdd.resx">
-      <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmLiuShuiDanQuery.resx">
-      <DependentUpon>FrmLiuShuiDanQuery.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmLouCeng.resx">
-      <DependentUpon>FrmLouCeng.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMainHouTai.resx">
-      <DependentUpon>FrmMainHouTai.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmYuanGong.resx">
-      <DependentUpon>FrmYuanGong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmYuanGongChaXun.resx">
-      <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmZuoWei.resx">
-      <DependentUpon>FrmZuoWei.cs</DependentUpon>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RetrievePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetrievePassword.Designer.cs">
+      <DependentUpon>RetrievePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XiaoShouPing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XiaoShouPing.Designer.cs">
+      <DependentUpon>XiaoShouPing.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,7 +87,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetrievePassword.resx">
+      <DependentUpon>RetrievePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XiaoShouPing.resx">
+      <DependentUpon>XiaoShouPing.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -148,6 +108,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\餐厅\餐厅.csproj">
+      <Project>{dbf1b5b6-e5e3-48d0-9f06-2f7ea6a6098a}</Project>
+      <Name>餐厅</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\餐厅后台管理系统\餐厅管理系统后台.csproj">
+      <Project>{9db4b631-5f0a-4b35-ac4e-a10db476cf8e}</Project>
+      <Name>餐厅管理系统后台</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

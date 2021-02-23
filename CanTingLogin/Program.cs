@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 餐厅后台管理系统
+namespace CanTingLogin
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace 餐厅后台管理系统
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMainHouTai());
+            Application.Run(new FrmLogin());
         }
     }
 }
