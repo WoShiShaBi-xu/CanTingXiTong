@@ -13,25 +13,25 @@ namespace CanTingDAL
     {
         DBHelper db = new DBHelper();
         List<ZuoWei> zuoWei = new List<ZuoWei>();
-        public DataTable QueryZuoWei()
+        public List<ZuoWei> QueryZuoWei()
         {
             string sql = "select ZuoWeiId, ZuoWeiBeiZhu, ZuoWeiLiuShuiDanId, ZuoWeiZhuangTaiId, CengShuId, ZuoWeiTingYong, ZuoWeiYuanGongId from ZuoWei";
             DataTable dt = db.GetTable(sql, "ZuoWeiBiao");
             foreach (DataRow item in dt.Rows)
             {
-                ZuoWei stu = new ZuoWei
+                ZuoWei zw = new ZuoWei
                 {
-                    //LoginPwd = item["ZuoWeiId"].ToString(),
-                    //StudentName = item["ZuoWeiBeiZhu"].ToString(),
-                    //Gender = item["ZuoWeiLiuShuiDanId"].ToString(),
-                    //GradeId = item["ZuoWeiZhuangTaiId"].ToString(),
-                    //Phone = item["CengShuId"].ToString(),
-                    //Address = item["ZuoWeiTingYong"].ToString(),
-                    //Birthday = item["ZuoWeiYuanGongId"].ToString()
+                    ZuoWeiId = (int)item["ZuoWeiId"],
+                    ZuoWeiBeiZhu = item["ZuoWeiBeiZhu"].ToString(),
+                    ZuoWeiLiuShuiDanId = (int)item["ZuoWeiLiuShuiDanId"],
+                    ZuoWeiZhuangTaiId = (int)item["ZuoWeiZhuangTaiId"],
+                    CengShuId = (int)item["CengShuId"],
+                    ZuoWeiTingYong = item["ZuoWeiTingYong"].ToString(),
+                    ZuoWeiYuanGongId = (int)item["ZuoWeiYuanGongId"]
                 };
-                zuoWei.Add(stu);
+                zuoWei.Add(zw);
             }
-            return dt;
+            return zuoWei;
         }
     }
 }

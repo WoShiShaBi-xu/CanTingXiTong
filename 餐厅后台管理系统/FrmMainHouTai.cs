@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 餐厅后台管理系统
 {
-    public partial class FrmMain : Form
+    public partial class FrmMainHouTai : Form
     {
-        public FrmMain()
+        public FrmMainHouTai()
         {
             InitializeComponent();
         }
