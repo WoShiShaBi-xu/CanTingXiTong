@@ -69,12 +69,6 @@
     <Compile Include="RetrievePassword.Designer.cs">
       <DependentUpon>RetrievePassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="XiaoShouPing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="XiaoShouPing.Designer.cs">
-      <DependentUpon>XiaoShouPing.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,9 +86,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RetrievePassword.resx">
       <DependentUpon>RetrievePassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XiaoShouPing.resx">
-      <DependentUpon>XiaoShouPing.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
