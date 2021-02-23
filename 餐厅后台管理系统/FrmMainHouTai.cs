@@ -26,5 +26,16 @@ namespace 餐厅后台管理系统
         {
 
         }
+
+        private void 添加销售品ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 多条件查询销售品ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmXiaoShouPin frm = new FrmXiaoShouPin();
+            frm.Show();
+        }
     }
 }

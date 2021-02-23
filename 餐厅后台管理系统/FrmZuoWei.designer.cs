@@ -226,7 +226,7 @@ namespace 餐厅后台管理系统
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "保存";
             // 
-            // FrmZuoWeiTwo
+            // FrmZuoWei
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -240,9 +240,10 @@ namespace 餐厅后台管理系统
             this.Controls.Add(this.btnBreak);
             this.Controls.Add(this.btnSave);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmZuoWeiTwo";
+            this.Name = "FrmZuoWei";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "座位停/用设置";
+            this.Load += new System.EventHandler(this.FrmZuoWei_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchZuoWei)).EndInit();
             this.ResumeLayout(false);
 

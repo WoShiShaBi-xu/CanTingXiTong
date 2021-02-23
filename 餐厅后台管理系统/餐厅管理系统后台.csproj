@@ -96,11 +96,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XiaoShouPing.cs">
+    <Compile Include="FrmXiaoShouPin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XiaoShouPing.Designer.cs">
-      <DependentUpon>XiaoShouPing.cs</DependentUpon>
+    <Compile Include="FrmXiaoShouPin.Designer.cs">
+      <DependentUpon>FrmXiaoShouPin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
@@ -132,8 +132,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="XiaoShouPing.resx">
-      <DependentUpon>XiaoShouPing.cs</DependentUpon>
+    <EmbeddedResource Include="FrmXiaoShouPin.resx">
+      <DependentUpon>FrmXiaoShouPin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -148,6 +148,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CanTingHouTaiBLL\CanTingHouTaiBLL.csproj">
+      <Project>{af916b8c-db1b-4530-9d9d-ad26266c86ac}</Project>
+      <Name>CanTingHouTaiBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CanTingModes\CanTingModes.csproj">
+      <Project>{745c4c43-e7d5-4b31-b117-27f0785e61ec}</Project>
+      <Name>CanTingModes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

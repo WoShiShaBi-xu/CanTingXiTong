@@ -38,27 +38,27 @@ namespace 餐厅
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReXiao));
             this.dgvReXiaoSearch = new Sunny.UI.UIDataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ptFanYe = new Sunny.UI.UIPagination();
-            this.uiPagination1 = new Sunny.UI.UIPagination();
-            this.uiDataGridView1 = new Sunny.UI.UIDataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.点菜ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ptFanYe = new Sunny.UI.UIPagination();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.uiPagination1 = new Sunny.UI.UIPagination();
+            this.uiDataGridView1 = new Sunny.UI.UIDataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReXiaoSearch)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView1)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvReXiaoSearch
@@ -104,28 +104,6 @@ namespace 餐厅
             this.dgvReXiaoSearch.Size = new System.Drawing.Size(654, 678);
             this.dgvReXiaoSearch.TabIndex = 0;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.ptFanYe);
-            this.groupBox1.Controls.Add(this.dgvReXiaoSearch);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(666, 751);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "热销(右击选中可点菜)";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.uiPagination1);
-            this.groupBox2.Controls.Add(this.uiDataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(690, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(666, 751);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "已点列表";
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "销售品名";
@@ -161,6 +139,31 @@ namespace 餐厅
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.点菜ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(109, 28);
+            // 
+            // 点菜ToolStripMenuItem
+            // 
+            this.点菜ToolStripMenuItem.Name = "点菜ToolStripMenuItem";
+            this.点菜ToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            this.点菜ToolStripMenuItem.Text = "点菜";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.ptFanYe);
+            this.groupBox1.Controls.Add(this.dgvReXiaoSearch);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(666, 751);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "热销(右击选中可点菜)";
+            // 
             // ptFanYe
             // 
             this.ptFanYe.Font = new System.Drawing.Font("微软雅黑", 12F);
@@ -175,6 +178,17 @@ namespace 餐厅
             this.ptFanYe.TabIndex = 2;
             this.ptFanYe.Text = "uiPagination1";
             this.ptFanYe.TotalCount = 10;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.uiPagination1);
+            this.groupBox2.Controls.Add(this.uiDataGridView1);
+            this.groupBox2.Location = new System.Drawing.Point(690, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(666, 751);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "已点列表";
             // 
             // uiPagination1
             // 
@@ -232,20 +246,6 @@ namespace 餐厅
             this.uiDataGridView1.Size = new System.Drawing.Size(654, 678);
             this.uiDataGridView1.TabIndex = 3;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.点菜ToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(109, 28);
-            // 
-            // 点菜ToolStripMenuItem
-            // 
-            this.点菜ToolStripMenuItem.Name = "点菜ToolStripMenuItem";
-            this.点菜ToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
-            this.点菜ToolStripMenuItem.Text = "点菜";
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "销售品名";
@@ -285,12 +285,12 @@ namespace 餐厅
             this.MaximizeBox = false;
             this.Name = "FrmReXiao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "热销菜品";
+            this.Text = "。。。。。。。。。。。。。。。。。";
             ((System.ComponentModel.ISupportInitialize)(this.dgvReXiaoSearch)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView1)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

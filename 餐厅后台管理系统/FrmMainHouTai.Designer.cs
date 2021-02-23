@@ -167,6 +167,7 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.C)));
             this.添加销售品ToolStripMenuItem.Size = new System.Drawing.Size(314, 26);
             this.添加销售品ToolStripMenuItem.Text = "添加销售品";
+            this.添加销售品ToolStripMenuItem.Click += new System.EventHandler(this.添加销售品ToolStripMenuItem_Click);
             // 
             // 多条件查询销售品ToolStripMenuItem
             // 
@@ -175,6 +176,7 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.O)));
             this.多条件查询销售品ToolStripMenuItem.Size = new System.Drawing.Size(314, 26);
             this.多条件查询销售品ToolStripMenuItem.Text = "多条件查询销售品";
+            this.多条件查询销售品ToolStripMenuItem.Click += new System.EventHandler(this.多条件查询销售品ToolStripMenuItem_Click);
             // 
             // 修改销售品信息ToolStripMenuItem
             // 
