@@ -9,7 +9,7 @@ using CanTingModes;
 
 namespace CanTingHouTaiDAL
 {
-    class ZuoWeiServer
+    public class ZuoWeiServer
     {
         DBHelper db = new DBHelper();
         public List<ZuoWei> ChaXunZuoWei()
