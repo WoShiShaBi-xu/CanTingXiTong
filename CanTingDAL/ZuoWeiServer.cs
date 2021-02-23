@@ -19,7 +19,7 @@ namespace CanTingDAL
             DataTable dt = db.GetTable(sql, "ZuoWeiBiao");
             foreach (DataRow item in dt.Rows)
             {
-                ZuoWei stu = new ZuoWei
+                ZuoWei zw = new ZuoWei
                 {
                     ZuoWeiId = (int)item["ZuoWeiId"],
                     ZuoWeiBeiZhu = item["ZuoWeiBeiZhu"].ToString(),
@@ -29,7 +29,7 @@ namespace CanTingDAL
                     ZuoWeiTingYong = item["ZuoWeiTingYong"].ToString(),
                     ZuoWeiYuanGongId = (int)item["ZuoWeiYuanGongId"]
                 };
-                zuoWei.Add(stu);
+                zuoWei.Add(zw);
             }
             return zuoWei;
         }
