@@ -24,7 +24,6 @@ namespace CanTingLogin
         {
             comPost.SelectedIndex = 0;
 
-
             Form frm = new Form();
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Width = 900;
@@ -41,11 +40,10 @@ namespace CanTingLogin
         }
 
         /// <summary>
-        /// 囧i哦
+        /// 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
         private void linkLabel1_Click(object sender, EventArgs e)
         {
             Registration registration = new Registration();
