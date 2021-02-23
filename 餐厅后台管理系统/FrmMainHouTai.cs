@@ -26,7 +26,7 @@ namespace 餐厅后台管理系统
         }
 
         private void 菜品停用设置ToolStripMenuItem_Click( object sender , EventArgs e ) {
-            XiaoShouPing xiao = new XiaoShouPing();
+            FrmXiaoShouPin xiao = new FrmXiaoShouPin();
             xiao.MdiParent = this;
             xiao.Show();
 
