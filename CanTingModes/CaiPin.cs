@@ -14,7 +14,8 @@ namespace CanTingModes
         public double CaiPinJiaGe { get; set; }//菜品价格
         public double CaiPinTeJia { get; set; }//菜品特价
         public int CaiPinDianDanShu { get; set; }//菜品点单数
-        public int CaiPinFenLeiId { get; set; }//菜品分类编号
+        public CalPinFenLei CaiPinFenLei { get; set; }//菜品分类编号
         public int CaiPinKuCun { get; set; }//菜品库存
+
     }
 }
