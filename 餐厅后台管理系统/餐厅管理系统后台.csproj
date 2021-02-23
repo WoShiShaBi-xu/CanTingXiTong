@@ -37,7 +37,7 @@
       <HintPath>..\packages\HZH_Controls.1.0.14\lib\net40\HZH_Controls.dll</HintPath>
     </Reference>
     <Reference Include="SunnyUI">
-      <HintPath>E:\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
+      <HintPath>..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,12 +63,6 @@
     </Compile>
     <Compile Include="FrmLiuShuiDanAdd.Designer.cs">
       <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLiuShuiDanQuery.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLiuShuiDanQuery.Designer.cs">
-      <DependentUpon>FrmLiuShuiDanQuery.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLouCeng.cs">
       <SubType>Form</SubType>
@@ -102,14 +96,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XiaoShouPing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XiaoShouPing.Designer.cs">
+      <DependentUpon>XiaoShouPing.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLiuShuiDanAdd.resx">
       <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmLiuShuiDanQuery.resx">
-      <DependentUpon>FrmLiuShuiDanQuery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLouCeng.resx">
       <DependentUpon>FrmLouCeng.cs</DependentUpon>
@@ -135,6 +132,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="XiaoShouPing.resx">
+      <DependentUpon>XiaoShouPing.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

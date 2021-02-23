@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 餐厅后台管理系统
 {
-    public partial class FrmLiuShuiDanQuery : Form
+    public partial class XiaoShouPing : Form
     {
-        public FrmLiuShuiDanQuery()
+        public XiaoShouPing()
         {
             InitializeComponent();
         }

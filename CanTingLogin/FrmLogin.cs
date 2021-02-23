@@ -31,7 +31,7 @@ namespace CanTingLogin
             frm.StartPosition = FormStartPosition.CenterScreen;
             frm.ShowInTaskbar = false;
             PictureBox pbx = new PictureBox();
-            pbx.Image = Image.FromFile(@"D:\C\Jobs\HotelManageEx\bin\Release\杜绝浪费.jpg");
+            pbx.Image = Image.FromFile( @"D:\C#\餐厅管理系统\CanTingLogin\langFei\杜绝浪费.jpg" );
             pbx.Dock = DockStyle.Fill;
             frm.Controls.Add(pbx);
             frm.Show();
