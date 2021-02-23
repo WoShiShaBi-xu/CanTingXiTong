@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LoginManager.cs" />
+    <Compile Include="CaiPinManager.cs" />
+    <Compile Include="DianCaiManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YuanGongManager.cs" />
+    <Compile Include="ZuoWeiManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CanTingDAL\CanTingDAL.csproj">

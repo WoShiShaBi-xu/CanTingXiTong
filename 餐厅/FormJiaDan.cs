@@ -15,7 +15,7 @@ namespace 餐厅 {
         }
 
         private void btnJiaDan_BtnClick( object sender , EventArgs e ) {
-
+            this.Close();
         }
 
         private void groupBox3_Enter( object sender , EventArgs e ) {

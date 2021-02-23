@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CanTingLogin
+namespace 餐厅
 {
-    public partial class XiaoShouPing : Form
+    public partial class FrmTuiDan : Form
     {
-        public XiaoShouPing()
+        public FrmTuiDan()
         {
             InitializeComponent();
         }

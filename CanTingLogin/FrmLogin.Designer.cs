@@ -53,7 +53,7 @@ namespace CanTingLogin
             this.label4.ForeColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(393, 34);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(446, 73);
+            this.label4.Size = new System.Drawing.Size(452, 74);
             this.label4.TabIndex = 21;
             this.label4.Text = "登录美食餐厅";
             // 
@@ -65,7 +65,7 @@ namespace CanTingLogin
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(24, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(76, 21);
             this.label2.TabIndex = 14;
             this.label2.Text = "密码：";
             // 
@@ -77,9 +77,43 @@ namespace CanTingLogin
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(24, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.Size = new System.Drawing.Size(76, 21);
             this.label1.TabIndex = 13;
             this.label1.Text = "帐号：";
+            // 
+            // comPost
+            // 
+            this.comPost.BackColor = System.Drawing.Color.Snow;
+            this.comPost.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comPost.Font = new System.Drawing.Font("楷体", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.comPost.FormattingEnabled = true;
+            this.comPost.Items.AddRange(new object[] {
+            "--请选择--"});
+            this.comPost.Location = new System.Drawing.Point(99, 180);
+            this.comPost.Name = "comPost";
+            this.comPost.Size = new System.Drawing.Size(305, 25);
+            this.comPost.TabIndex = 2;
+            // 
+            // txtUser
+            // 
+            this.txtUser.BackColor = System.Drawing.Color.White;
+            this.txtUser.Font = new System.Drawing.Font("楷体", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtUser.Location = new System.Drawing.Point(99, 46);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(305, 27);
+            this.txtUser.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(24, 181);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 21);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "职位：";
             // 
             // panel1
             // 
@@ -139,7 +173,7 @@ namespace CanTingLogin
             this.cbkRememberPwd.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cbkRememberPwd.Location = new System.Drawing.Point(28, 192);
             this.cbkRememberPwd.Name = "cbkRememberPwd";
-            this.cbkRememberPwd.Size = new System.Drawing.Size(108, 24);
+            this.cbkRememberPwd.Size = new System.Drawing.Size(120, 25);
             this.cbkRememberPwd.TabIndex = 25;
             this.cbkRememberPwd.Text = "记住密码";
             this.cbkRememberPwd.UseVisualStyleBackColor = true;
@@ -196,6 +230,7 @@ namespace CanTingLogin
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmLogin_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

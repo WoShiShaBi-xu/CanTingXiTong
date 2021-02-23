@@ -1,7 +1,7 @@
 ﻿
-namespace CanTingLogin
+namespace 餐厅后台管理系统
 {
-    partial class XiaoShouPing
+    partial class FrmXiaoShouPin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,11 @@ namespace CanTingLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XiaoShouPing));
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("全部");
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmXiaoShouPin));
             this.uiButton3 = new Sunny.UI.UIButton();
             this.uiButton5 = new Sunny.UI.UIButton();
             this.uiButton4 = new Sunny.UI.UIButton();
@@ -61,14 +62,14 @@ namespace CanTingLogin
             this.utvXiaoShouPin = new Sunny.UI.UITreeView();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.udgvXiaosShouPin = new Sunny.UI.UIDataGridView();
+            this.dgvXiaosShouPin = new Sunny.UI.UIDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.udgvXiaosShouPin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvXiaosShouPin)).BeginInit();
             this.SuspendLayout();
             // 
             // uiButton3
@@ -92,6 +93,7 @@ namespace CanTingLogin
             this.uiButton3.Style = Sunny.UI.UIStyle.Custom;
             this.uiButton3.TabIndex = 11;
             this.uiButton3.Text = "保存";
+            this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
             // 
             // uiButton5
             // 
@@ -114,6 +116,7 @@ namespace CanTingLogin
             this.uiButton5.Style = Sunny.UI.UIStyle.Custom;
             this.uiButton5.TabIndex = 5;
             this.uiButton5.Text = "关闭";
+            this.uiButton5.Click += new System.EventHandler(this.uiButton5_Click);
             // 
             // uiButton4
             // 
@@ -133,6 +136,7 @@ namespace CanTingLogin
             this.uiButton4.Style = Sunny.UI.UIStyle.Custom;
             this.uiButton4.TabIndex = 6;
             this.uiButton4.Text = "添加";
+            this.uiButton4.Click += new System.EventHandler(this.uiButton4_Click);
             // 
             // ucmbDanWei
             // 
@@ -180,6 +184,7 @@ namespace CanTingLogin
             this.uiButton2.Style = Sunny.UI.UIStyle.Custom;
             this.uiButton2.TabIndex = 9;
             this.uiButton2.Text = "删除";
+            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
             // Column6
             // 
@@ -234,6 +239,7 @@ namespace CanTingLogin
             this.groupBox3.Controls.Add(this.utxtTeJia);
             this.groupBox3.Controls.Add(this.utxtName);
             this.groupBox3.Controls.Add(this.utxtPrice);
+            this.groupBox3.Enabled = false;
             this.groupBox3.Font = new System.Drawing.Font("楷体", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox3.Location = new System.Drawing.Point(324, 605);
             this.groupBox3.Name = "groupBox3";
@@ -247,7 +253,7 @@ namespace CanTingLogin
             this.cbDaChe.AutoSize = true;
             this.cbDaChe.Location = new System.Drawing.Point(137, 173);
             this.cbDaChe.Name = "cbDaChe";
-            this.cbDaChe.Size = new System.Drawing.Size(15, 14);
+            this.cbDaChe.Size = new System.Drawing.Size(18, 17);
             this.cbDaChe.TabIndex = 16;
             this.cbDaChe.UseVisualStyleBackColor = true;
             // 
@@ -429,12 +435,17 @@ namespace CanTingLogin
             this.utvXiaoShouPin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.utvXiaoShouPin.MinimumSize = new System.Drawing.Size(1, 1);
             this.utvXiaoShouPin.Name = "utvXiaoShouPin";
+            treeNode1.Name = "节点0";
+            treeNode1.Text = "全部";
+            this.utvXiaoShouPin.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode1});
             this.utvXiaoShouPin.RectColor = System.Drawing.Color.SkyBlue;
             this.utvXiaoShouPin.SelectedNode = null;
             this.utvXiaoShouPin.Size = new System.Drawing.Size(292, 818);
             this.utvXiaoShouPin.Style = Sunny.UI.UIStyle.Custom;
             this.utvXiaoShouPin.TabIndex = 1;
             this.utvXiaoShouPin.Text = "uiTreeView1";
+            this.utvXiaoShouPin.Click += new System.EventHandler(this.utvXiaoShouPin_Click);
             // 
             // Column8
             // 
@@ -446,7 +457,7 @@ namespace CanTingLogin
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.udgvXiaosShouPin);
+            this.groupBox2.Controls.Add(this.dgvXiaosShouPin);
             this.groupBox2.Font = new System.Drawing.Font("楷体", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.Location = new System.Drawing.Point(324, 12);
             this.groupBox2.Name = "groupBox2";
@@ -455,29 +466,29 @@ namespace CanTingLogin
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "销售品菜单列表";
             // 
-            // udgvXiaosShouPin
+            // dgvXiaosShouPin
             // 
-            this.udgvXiaosShouPin.AllowUserToAddRows = false;
-            this.udgvXiaosShouPin.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.udgvXiaosShouPin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.udgvXiaosShouPin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvXiaosShouPin.AllowUserToAddRows = false;
+            this.dgvXiaosShouPin.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.dgvXiaosShouPin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvXiaosShouPin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.udgvXiaosShouPin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.udgvXiaosShouPin.BackgroundColor = System.Drawing.Color.White;
-            this.udgvXiaosShouPin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("微软雅黑", 12F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.udgvXiaosShouPin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.udgvXiaosShouPin.ColumnHeadersHeight = 32;
-            this.udgvXiaosShouPin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.udgvXiaosShouPin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvXiaosShouPin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvXiaosShouPin.BackgroundColor = System.Drawing.Color.White;
+            this.dgvXiaosShouPin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvXiaosShouPin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvXiaosShouPin.ColumnHeadersHeight = 32;
+            this.dgvXiaosShouPin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvXiaosShouPin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -485,22 +496,22 @@ namespace CanTingLogin
             this.Column4,
             this.Column5,
             this.Column6});
-            this.udgvXiaosShouPin.EnableHeadersVisualStyles = false;
-            this.udgvXiaosShouPin.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.udgvXiaosShouPin.GridColor = System.Drawing.Color.SkyBlue;
-            this.udgvXiaosShouPin.Location = new System.Drawing.Point(6, 26);
-            this.udgvXiaosShouPin.Name = "udgvXiaosShouPin";
-            this.udgvXiaosShouPin.RectColor = System.Drawing.Color.SkyBlue;
-            this.udgvXiaosShouPin.RowHeadersVisible = false;
-            this.udgvXiaosShouPin.RowHeadersWidth = 51;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            this.udgvXiaosShouPin.RowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.udgvXiaosShouPin.RowTemplate.Height = 29;
-            this.udgvXiaosShouPin.SelectedIndex = -1;
-            this.udgvXiaosShouPin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.udgvXiaosShouPin.ShowGridLine = true;
-            this.udgvXiaosShouPin.Size = new System.Drawing.Size(1137, 546);
-            this.udgvXiaosShouPin.TabIndex = 0;
+            this.dgvXiaosShouPin.EnableHeadersVisualStyles = false;
+            this.dgvXiaosShouPin.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.dgvXiaosShouPin.GridColor = System.Drawing.Color.SkyBlue;
+            this.dgvXiaosShouPin.Location = new System.Drawing.Point(6, 29);
+            this.dgvXiaosShouPin.Name = "dgvXiaosShouPin";
+            this.dgvXiaosShouPin.RectColor = System.Drawing.Color.SkyBlue;
+            this.dgvXiaosShouPin.RowHeadersVisible = false;
+            this.dgvXiaosShouPin.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            this.dgvXiaosShouPin.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvXiaosShouPin.RowTemplate.Height = 29;
+            this.dgvXiaosShouPin.SelectedIndex = -1;
+            this.dgvXiaosShouPin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvXiaosShouPin.ShowGridLine = true;
+            this.dgvXiaosShouPin.Size = new System.Drawing.Size(1137, 546);
+            this.dgvXiaosShouPin.TabIndex = 0;
             // 
             // Column1
             // 
@@ -521,7 +532,7 @@ namespace CanTingLogin
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
-            // XiaoShouPing
+            // FrmXiaoShouPin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -534,14 +545,16 @@ namespace CanTingLogin
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "XiaoShouPing";
+            this.MaximizeBox = false;
+            this.Name = "FrmXiaoShouPin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "销售品";
+            this.Text = "销售品查询";
+            this.Load += new System.EventHandler(this.FrmXiaoShouPin_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.udgvXiaosShouPin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvXiaosShouPin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -576,7 +589,7 @@ namespace CanTingLogin
         private Sunny.UI.UITreeView utvXiaoShouPin;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.GroupBox groupBox2;
-        private Sunny.UI.UIDataGridView udgvXiaosShouPin;
+        private Sunny.UI.UIDataGridView dgvXiaosShouPin;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
