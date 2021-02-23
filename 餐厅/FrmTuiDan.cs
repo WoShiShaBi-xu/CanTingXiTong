@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace 餐厅
 {
-    public partial class FrmJiaDanTwo : Form
+    public partial class FrmTuiDan : Form
     {
-        public FrmJiaDanTwo()
+        public FrmTuiDan()
         {
             InitializeComponent();
-        }
-
-        private void FrmJiaDanTwo_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

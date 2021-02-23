@@ -26,10 +26,10 @@ namespace 餐厅 {
         private void InitializeComponent( ) {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("大厅");
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("大厅");
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -184,9 +184,9 @@ namespace 餐厅 {
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 738);
+            this.groupBox2.Location = new System.Drawing.Point(12, 728);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(237, 317);
+            this.groupBox2.Size = new System.Drawing.Size(237, 315);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "状态";
@@ -255,7 +255,7 @@ namespace 餐厅 {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 688);
+            this.label1.Location = new System.Drawing.Point(12, 691);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 0;
@@ -287,7 +287,7 @@ namespace 餐厅 {
             this.btnReXiao.TabStop = false;
             this.btnReXiao.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
             this.btnReXiao.TipsText = "";
-            this.btnReXiao.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick);
+            this.btnReXiao.BtnClick += new System.EventHandler(this.btnReXiao_BtnClick);
             // 
             // btnQiCai
             // 
@@ -343,7 +343,7 @@ namespace 餐厅 {
             this.btnTuiDan.TabStop = false;
             this.btnTuiDan.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
             this.btnTuiDan.TipsText = "";
-            this.btnTuiDan.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick);
+            this.btnTuiDan.BtnClick += new System.EventHandler(this.btnTuiDan_BtnClick);
             // 
             // btnJiaDan
             // 
@@ -379,10 +379,10 @@ namespace 餐厅 {
             this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(15, 326);
             this.treeView1.Name = "treeView1";
-            treeNode2.Name = "节点0";
-            treeNode2.Text = "大厅";
+            treeNode1.Name = "节点0";
+            treeNode1.Text = "大厅";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2});
+            treeNode1});
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(235, 359);
             this.treeView1.TabIndex = 20;
@@ -492,19 +492,19 @@ namespace 餐厅 {
             // 
             this.dgvSearchCaiDan.AllowUserToAddRows = false;
             this.dgvSearchCaiDan.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.dgvSearchCaiDan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.dgvSearchCaiDan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvSearchCaiDan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSearchCaiDan.BackgroundColor = System.Drawing.Color.White;
             this.dgvSearchCaiDan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("微软雅黑", 12F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSearchCaiDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("微软雅黑", 12F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSearchCaiDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvSearchCaiDan.ColumnHeadersHeight = 32;
             this.dgvSearchCaiDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvSearchCaiDan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -523,13 +523,13 @@ namespace 餐厅 {
             this.dgvSearchCaiDan.ReadOnly = true;
             this.dgvSearchCaiDan.RowHeadersVisible = false;
             this.dgvSearchCaiDan.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            this.dgvSearchCaiDan.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.dgvSearchCaiDan.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvSearchCaiDan.RowTemplate.Height = 29;
             this.dgvSearchCaiDan.SelectedIndex = -1;
             this.dgvSearchCaiDan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSearchCaiDan.ShowGridLine = true;
-            this.dgvSearchCaiDan.Size = new System.Drawing.Size(1771, 317);
+            this.dgvSearchCaiDan.Size = new System.Drawing.Size(1771, 308);
             this.dgvSearchCaiDan.TabIndex = 21;
             // 
             // Column9

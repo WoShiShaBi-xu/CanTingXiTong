@@ -52,11 +52,12 @@ namespace 餐厅
             this.btnKaiTai.FillPressColor = System.Drawing.Color.BurlyWood;
             this.btnKaiTai.FillSelectedColor = System.Drawing.Color.Tan;
             this.btnKaiTai.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnKaiTai.Location = new System.Drawing.Point(207, 622);
+            this.btnKaiTai.Location = new System.Drawing.Point(174, 437);
             this.btnKaiTai.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnKaiTai.Name = "btnKaiTai";
             this.btnKaiTai.Radius = 30;
-            this.btnKaiTai.Size = new System.Drawing.Size(123, 50);
+            this.btnKaiTai.RectColor = System.Drawing.Color.Silver;
+            this.btnKaiTai.Size = new System.Drawing.Size(156, 50);
             this.btnKaiTai.Style = Sunny.UI.UIStyle.Custom;
             this.btnKaiTai.TabIndex = 0;
             this.btnKaiTai.Text = "开台";
@@ -83,7 +84,9 @@ namespace 餐厅
             this.txtName.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtName.Name = "txtName";
             this.txtName.Padding = new System.Windows.Forms.Padding(5);
-            this.txtName.Size = new System.Drawing.Size(222, 34);
+            this.txtName.RectColor = System.Drawing.Color.Silver;
+            this.txtName.Size = new System.Drawing.Size(369, 34);
+            this.txtName.Style = Sunny.UI.UIStyle.Custom;
             this.txtName.TabIndex = 2;
             // 
             // cboFuWuYuan
@@ -95,7 +98,9 @@ namespace 餐厅
             this.cboFuWuYuan.MinimumSize = new System.Drawing.Size(63, 0);
             this.cboFuWuYuan.Name = "cboFuWuYuan";
             this.cboFuWuYuan.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.cboFuWuYuan.Size = new System.Drawing.Size(222, 34);
+            this.cboFuWuYuan.RectColor = System.Drawing.Color.Silver;
+            this.cboFuWuYuan.Size = new System.Drawing.Size(369, 34);
+            this.cboFuWuYuan.Style = Sunny.UI.UIStyle.Custom;
             this.cboFuWuYuan.TabIndex = 3;
             this.cboFuWuYuan.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -121,7 +126,9 @@ namespace 餐厅
             this.txtShuLiang.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtShuLiang.Name = "txtShuLiang";
             this.txtShuLiang.Padding = new System.Windows.Forms.Padding(5);
-            this.txtShuLiang.Size = new System.Drawing.Size(222, 34);
+            this.txtShuLiang.RectColor = System.Drawing.Color.Silver;
+            this.txtShuLiang.Size = new System.Drawing.Size(369, 34);
+            this.txtShuLiang.Style = Sunny.UI.UIStyle.Custom;
             this.txtShuLiang.TabIndex = 2;
             // 
             // uiLabel3
@@ -156,7 +163,9 @@ namespace 餐厅
             this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiTextBox1.Name = "uiTextBox1";
             this.uiTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox1.Size = new System.Drawing.Size(222, 34);
+            this.uiTextBox1.RectColor = System.Drawing.Color.Silver;
+            this.uiTextBox1.Size = new System.Drawing.Size(369, 34);
+            this.uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
             this.uiTextBox1.TabIndex = 2;
             // 
             // btnBreak
@@ -167,11 +176,12 @@ namespace 餐厅
             this.btnBreak.FillPressColor = System.Drawing.Color.Gray;
             this.btnBreak.FillSelectedColor = System.Drawing.Color.Gray;
             this.btnBreak.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnBreak.Location = new System.Drawing.Point(385, 622);
+            this.btnBreak.Location = new System.Drawing.Point(352, 437);
             this.btnBreak.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnBreak.Name = "btnBreak";
             this.btnBreak.Radius = 30;
-            this.btnBreak.Size = new System.Drawing.Size(123, 50);
+            this.btnBreak.RectColor = System.Drawing.Color.Silver;
+            this.btnBreak.Size = new System.Drawing.Size(156, 50);
             this.btnBreak.Style = Sunny.UI.UIStyle.Custom;
             this.btnBreak.TabIndex = 0;
             this.btnBreak.Text = "返回";
@@ -196,7 +206,8 @@ namespace 餐厅
             this.txtbeiZhu.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtbeiZhu.Name = "txtbeiZhu";
             this.txtbeiZhu.Padding = new System.Windows.Forms.Padding(2);
-            this.txtbeiZhu.Size = new System.Drawing.Size(369, 300);
+            this.txtbeiZhu.RectColor = System.Drawing.Color.Silver;
+            this.txtbeiZhu.Size = new System.Drawing.Size(369, 106);
             this.txtbeiZhu.Style = Sunny.UI.UIStyle.Custom;
             this.txtbeiZhu.TabIndex = 4;
             // 
@@ -205,7 +216,7 @@ namespace 餐厅
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(521, 693);
+            this.ClientSize = new System.Drawing.Size(521, 500);
             this.Controls.Add(this.txtbeiZhu);
             this.Controls.Add(this.cboFuWuYuan);
             this.Controls.Add(this.uiTextBox1);

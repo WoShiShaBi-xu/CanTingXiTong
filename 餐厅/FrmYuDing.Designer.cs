@@ -30,9 +30,9 @@ namespace 餐厅
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmYuDing));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtName = new Sunny.UI.UITextBox();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.btnYuDing = new Sunny.UI.UIButton();
@@ -75,7 +75,9 @@ namespace 餐厅
             this.txtName.Name = "txtName";
             this.txtName.Padding = new System.Windows.Forms.Padding(5);
             this.txtName.Radius = 15;
+            this.txtName.RectColor = System.Drawing.Color.Silver;
             this.txtName.Size = new System.Drawing.Size(257, 34);
+            this.txtName.Style = Sunny.UI.UIStyle.Custom;
             this.txtName.TabIndex = 0;
             // 
             // uiLabel1
@@ -119,7 +121,9 @@ namespace 餐厅
             this.cboZuoWei.Name = "cboZuoWei";
             this.cboZuoWei.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.cboZuoWei.Radius = 15;
+            this.cboZuoWei.RectColor = System.Drawing.Color.Silver;
             this.cboZuoWei.Size = new System.Drawing.Size(257, 34);
+            this.cboZuoWei.Style = Sunny.UI.UIStyle.Custom;
             this.cboZuoWei.TabIndex = 3;
             this.cboZuoWei.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -146,7 +150,9 @@ namespace 餐厅
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Padding = new System.Windows.Forms.Padding(5);
             this.txtPhone.Radius = 15;
+            this.txtPhone.RectColor = System.Drawing.Color.Silver;
             this.txtPhone.Size = new System.Drawing.Size(257, 34);
+            this.txtPhone.Style = Sunny.UI.UIStyle.Custom;
             this.txtPhone.TabIndex = 0;
             // 
             // uiLabel3
@@ -172,7 +178,9 @@ namespace 餐厅
             this.txtMoney.Name = "txtMoney";
             this.txtMoney.Padding = new System.Windows.Forms.Padding(5);
             this.txtMoney.Radius = 15;
+            this.txtMoney.RectColor = System.Drawing.Color.Silver;
             this.txtMoney.Size = new System.Drawing.Size(257, 34);
+            this.txtMoney.Style = Sunny.UI.UIStyle.Custom;
             this.txtMoney.TabIndex = 0;
             // 
             // uiLabel4
@@ -206,7 +214,9 @@ namespace 餐厅
             this.tpTime.Name = "tpTime";
             this.tpTime.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.tpTime.Radius = 15;
+            this.tpTime.RectColor = System.Drawing.Color.Silver;
             this.tpTime.Size = new System.Drawing.Size(257, 34);
+            this.tpTime.Style = Sunny.UI.UIStyle.Custom;
             this.tpTime.SymbolDropDown = 61555;
             this.tpTime.SymbolNormal = 61555;
             this.tpTime.TabIndex = 4;
@@ -305,19 +315,19 @@ namespace 餐厅
             // 
             this.dgvYuLiu.AllowUserToAddRows = false;
             this.dgvYuLiu.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvYuLiu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvYuLiu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvYuLiu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvYuLiu.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.dgvYuLiu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvYuLiu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 12F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvYuLiu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvYuLiu.ColumnHeadersHeight = 32;
             this.dgvYuLiu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvYuLiu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -334,8 +344,8 @@ namespace 餐厅
             this.dgvYuLiu.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvYuLiu.RowHeadersVisible = false;
             this.dgvYuLiu.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            this.dgvYuLiu.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            this.dgvYuLiu.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvYuLiu.RowTemplate.Height = 29;
             this.dgvYuLiu.SelectedIndex = -1;
             this.dgvYuLiu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

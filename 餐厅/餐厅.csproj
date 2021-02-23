@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HZH_Controls.1.0.14\lib\net40\HZH_Controls.dll</HintPath>
+    </Reference>
     <Reference Include="SunnyUI, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
@@ -50,12 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmJiaDanTwo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmJiaDanTwo.Designer.cs">
-      <DependentUpon>FrmJiaDanTwo.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmKaiTai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,11 +71,17 @@
     <Compile Include="FormJiaDan.Designer.cs">
       <DependentUpon>FormJiaDan.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmTuiTai.cs">
+    <Compile Include="FrmReXiao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTuiTai.Designer.cs">
-      <DependentUpon>FrmTuiTai.cs</DependentUpon>
+    <Compile Include="FrmReXiao.Designer.cs">
+      <DependentUpon>FrmReXiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTuiDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTuiDan.Designer.cs">
+      <DependentUpon>FrmTuiDan.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmYuDing.cs">
       <SubType>Form</SubType>
@@ -88,9 +91,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmJiaDanTwo.resx">
-      <DependentUpon>FrmJiaDanTwo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmKaiTai.resx">
       <DependentUpon>FrmKaiTai.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,8 +100,11 @@
     <EmbeddedResource Include="FormJiaDan.resx">
       <DependentUpon>FormJiaDan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTuiTai.resx">
-      <DependentUpon>FrmTuiTai.cs</DependentUpon>
+    <EmbeddedResource Include="FrmReXiao.resx">
+      <DependentUpon>FrmReXiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTuiDan.resx">
+      <DependentUpon>FrmTuiDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmYuDing.resx">
       <DependentUpon>FrmYuDing.cs</DependentUpon>
@@ -115,6 +118,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,12 +134,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NetWinformControl-master\HZH_Controls\HZH_Controls\HZH_Controls.csproj">
-      <Project>{af32e163-c577-4cbc-a072-0dc1ce0e1da3}</Project>
-      <Name>HZH_Controls</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
