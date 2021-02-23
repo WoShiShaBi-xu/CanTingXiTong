@@ -34,5 +34,22 @@ namespace 餐厅 {
             dan.Show();
             this.Hide();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            FrmKaiTai frm = new FrmKaiTai();
+            frm.ShowDialog();
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            FrmYuDing frm = new FrmYuDing();
+            frm.ShowDialog();
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SunnyUI, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmJiaDanTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJiaDanTwo.Designer.cs">
+      <DependentUpon>FrmJiaDanTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKaiTai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKaiTai.Designer.cs">
+      <DependentUpon>FrmKaiTai.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +74,37 @@
     <Compile Include="FormJiaDan.Designer.cs">
       <DependentUpon>FormJiaDan.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTuiTai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTuiTai.Designer.cs">
+      <DependentUpon>FrmTuiTai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYuDing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYuDing.Designer.cs">
+      <DependentUpon>FrmYuDing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmJiaDanTwo.resx">
+      <DependentUpon>FrmJiaDanTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKaiTai.resx">
+      <DependentUpon>FrmKaiTai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormJiaDan.resx">
       <DependentUpon>FormJiaDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTuiTai.resx">
+      <DependentUpon>FrmTuiTai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYuDing.resx">
+      <DependentUpon>FrmYuDing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,7 +115,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetWinformControl-master\HZH_Controls\HZH_Controls\HZH_Controls.csproj">
