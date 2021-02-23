@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaiPinManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YuanGongManager.cs" />
+    <Compile Include="ZuoWeiManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CanTingDAL\CanTingDAL.csproj">

@@ -8,17 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 餐厅 {
-    public partial class FormJiaDan : Form {
-        public FormJiaDan( ) {
+namespace 餐厅
+{
+    public partial class FrmYuDing : Form
+    {
+        public FrmYuDing()
+        {
             InitializeComponent();
         }
 
-        private void btnJiaDan_BtnClick( object sender , EventArgs e ) {
-            this.Close();
-        }
-
-        private void groupBox3_Enter( object sender , EventArgs e ) {
+        private void FrmYuDing_Load(object sender, EventArgs e)
+        {
 
         }
     }

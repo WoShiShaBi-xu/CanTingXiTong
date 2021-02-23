@@ -18,3 +18,4 @@ namespace CanTingModes
         public int ZuoWeiYuanGongId { get; set; }//座位负责员工编号
     }
 }
+    

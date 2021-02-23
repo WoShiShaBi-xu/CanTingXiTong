@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace 餐厅后台管理系统
+namespace 餐厅
 {
-    public partial class FrmLiuShuiDanQuery : Form
+    public partial class FrmKaiTai : Form
     {
-        public FrmLiuShuiDanQuery()
+        public FrmKaiTai()
         {
             InitializeComponent();
+        }
+
+        private void FrmKaiTai_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
