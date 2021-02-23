@@ -9,7 +9,7 @@ using CanTingModes;
 
 namespace CanTingDAL
 {
-    class CaiPinServer
+    public class CaiPinServer
     {
         DBHelper db = new DBHelper();
         List<CaiPin> caiPin = new List<CaiPin>();
