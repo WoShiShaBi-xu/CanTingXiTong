@@ -58,6 +58,12 @@
     <Compile Include="FrmAbout.Designer.cs">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmKuCun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKuCun.Designer.cs">
+      <DependentUpon>FrmKuCun.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLiuShuiDanAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKuCun.resx">
+      <DependentUpon>FrmKuCun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLiuShuiDanAdd.resx">
       <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
