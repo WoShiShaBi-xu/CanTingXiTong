@@ -113,6 +113,22 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CanTingBLL\CanTingBLL.csproj">
+      <Project>{ed8809de-f7a6-4c2f-8722-05a5c2bd05f3}</Project>
+      <Name>CanTingBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CanTingHouTaiBLL\CanTingHouTaiBLL.csproj">
+      <Project>{af916b8c-db1b-4530-9d9d-ad26266c86ac}</Project>
+      <Name>CanTingHouTaiBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CanTingModes\CanTingModes.csproj">
+      <Project>{745c4c43-e7d5-4b31-b117-27f0785e61ec}</Project>
+      <Name>CanTingModes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetWinformControl-master\HZH_Controls\HZH_Controls\HZH_Controls.csproj">
+      <Project>{af32e163-c577-4cbc-a072-0dc1ce0e1da3}</Project>
+      <Name>HZH_Controls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\餐厅\餐厅.csproj">
       <Project>{dbf1b5b6-e5e3-48d0-9f06-2f7ea6a6098a}</Project>
       <Name>餐厅</Name>

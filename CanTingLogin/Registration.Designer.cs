@@ -38,10 +38,10 @@ namespace CanTingLogin
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ubtnRegistration = new Sunny.UI.UIButton();
             this.label2 = new System.Windows.Forms.Label();
             this.txtRegistrationEmail = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.ubtnRegistration = new Sunny.UI.UIButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,6 +143,24 @@ namespace CanTingLogin
             this.panel1.Size = new System.Drawing.Size(440, 387);
             this.panel1.TabIndex = 30;
             // 
+            // ubtnRegistration
+            // 
+            this.ubtnRegistration.BackColor = System.Drawing.Color.Transparent;
+            this.ubtnRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ubtnRegistration.FillColor = System.Drawing.Color.LavenderBlush;
+            this.ubtnRegistration.Font = new System.Drawing.Font("楷体", 15.12605F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ubtnRegistration.ForeColor = System.Drawing.Color.Black;
+            this.ubtnRegistration.Location = new System.Drawing.Point(50, 286);
+            this.ubtnRegistration.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ubtnRegistration.Name = "ubtnRegistration";
+            this.ubtnRegistration.Radius = 30;
+            this.ubtnRegistration.RectColor = System.Drawing.Color.Transparent;
+            this.ubtnRegistration.Size = new System.Drawing.Size(357, 44);
+            this.ubtnRegistration.Style = Sunny.UI.UIStyle.Custom;
+            this.ubtnRegistration.TabIndex = 30;
+            this.ubtnRegistration.Text = "立即注册";
+            this.ubtnRegistration.Click += new System.EventHandler(this.ubtnRegistration_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -178,23 +196,6 @@ namespace CanTingLogin
             this.linkLabel1.Text = "返回登录";
             this.linkLabel1.Click += new System.EventHandler(this.linkLabel1_Click);
             // 
-            // ubtnRegistration
-            // 
-            this.ubtnRegistration.BackColor = System.Drawing.Color.Transparent;
-            this.ubtnRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ubtnRegistration.FillColor = System.Drawing.Color.LavenderBlush;
-            this.ubtnRegistration.Font = new System.Drawing.Font("楷体", 15.12605F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ubtnRegistration.ForeColor = System.Drawing.Color.Black;
-            this.ubtnRegistration.Location = new System.Drawing.Point(50, 286);
-            this.ubtnRegistration.MinimumSize = new System.Drawing.Size(1, 1);
-            this.ubtnRegistration.Name = "ubtnRegistration";
-            this.ubtnRegistration.Radius = 30;
-            this.ubtnRegistration.RectColor = System.Drawing.Color.Transparent;
-            this.ubtnRegistration.Size = new System.Drawing.Size(357, 44);
-            this.ubtnRegistration.Style = Sunny.UI.UIStyle.Custom;
-            this.ubtnRegistration.TabIndex = 30;
-            this.ubtnRegistration.Text = "立即注册";
-            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -208,6 +209,7 @@ namespace CanTingLogin
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "注册新账号";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Registration_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

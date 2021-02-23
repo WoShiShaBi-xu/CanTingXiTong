@@ -31,13 +31,11 @@ namespace CanTingLogin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.label4 = new System.Windows.Forms.Label();
-            this.txtPassWord = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comPost = new System.Windows.Forms.ComboBox();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtUserPwd = new System.Windows.Forms.TextBox();
+            this.cmbUser = new System.Windows.Forms.ComboBox();
             this.ubtnLogin = new Sunny.UI.UIButton();
             this.cbkRememberPwd = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -59,24 +57,13 @@ namespace CanTingLogin
             this.label4.TabIndex = 21;
             this.label4.Text = "登录美食餐厅";
             // 
-            // txtPassWord
-            // 
-            this.txtPassWord.BackColor = System.Drawing.Color.White;
-            this.txtPassWord.Font = new System.Drawing.Font("楷体", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtPassWord.Location = new System.Drawing.Point(99, 113);
-            this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.PasswordChar = '*';
-            this.txtPassWord.Size = new System.Drawing.Size(305, 27);
-            this.txtPassWord.TabIndex = 1;
-            this.txtPassWord.Tag = "";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(24, 112);
+            this.label2.Location = new System.Drawing.Point(24, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 14;
@@ -94,57 +81,38 @@ namespace CanTingLogin
             this.label1.TabIndex = 13;
             this.label1.Text = "帐号：";
             // 
-            // comPost
-            // 
-            this.comPost.BackColor = System.Drawing.Color.Snow;
-            this.comPost.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comPost.Font = new System.Drawing.Font("楷体", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.comPost.FormattingEnabled = true;
-            this.comPost.Items.AddRange(new object[] {
-            "--请选择--"});
-            this.comPost.Location = new System.Drawing.Point(99, 180);
-            this.comPost.Name = "comPost";
-            this.comPost.Size = new System.Drawing.Size(305, 25);
-            this.comPost.TabIndex = 2;
-            // 
-            // txtUser
-            // 
-            this.txtUser.BackColor = System.Drawing.Color.White;
-            this.txtUser.Font = new System.Drawing.Font("楷体", 10.28571F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtUser.Location = new System.Drawing.Point(99, 46);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(305, 27);
-            this.txtUser.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(24, 181);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 20);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "职位：";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtUserPwd);
+            this.panel1.Controls.Add(this.cmbUser);
             this.panel1.Controls.Add(this.ubtnLogin);
             this.panel1.Controls.Add(this.cbkRememberPwd);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.txtPassWord);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.comPost);
-            this.panel1.Controls.Add(this.txtUser);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(112, 187);
+            this.panel1.Location = new System.Drawing.Point(111, 205);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(440, 390);
+            this.panel1.Size = new System.Drawing.Size(440, 372);
             this.panel1.TabIndex = 22;
+            // 
+            // txtUserPwd
+            // 
+            this.txtUserPwd.Location = new System.Drawing.Point(99, 142);
+            this.txtUserPwd.Name = "txtUserPwd";
+            this.txtUserPwd.PasswordChar = '*';
+            this.txtUserPwd.Size = new System.Drawing.Size(284, 25);
+            this.txtUserPwd.TabIndex = 30;
+            // 
+            // cmbUser
+            // 
+            this.cmbUser.FormattingEnabled = true;
+            this.cmbUser.Location = new System.Drawing.Point(99, 44);
+            this.cmbUser.Name = "cmbUser";
+            this.cmbUser.Size = new System.Drawing.Size(284, 23);
+            this.cmbUser.TabIndex = 29;
+            this.cmbUser.SelectedIndexChanged += new System.EventHandler(this.cmbUser_SelectedIndexChanged);
             // 
             // ubtnLogin
             // 
@@ -154,7 +122,7 @@ namespace CanTingLogin
             this.ubtnLogin.FillHoverColor = System.Drawing.Color.CornflowerBlue;
             this.ubtnLogin.Font = new System.Drawing.Font("楷体", 15.12605F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ubtnLogin.ForeColor = System.Drawing.Color.Black;
-            this.ubtnLogin.Location = new System.Drawing.Point(28, 253);
+            this.ubtnLogin.Location = new System.Drawing.Point(28, 233);
             this.ubtnLogin.MinimumSize = new System.Drawing.Size(1, 1);
             this.ubtnLogin.Name = "ubtnLogin";
             this.ubtnLogin.Radius = 30;
@@ -169,7 +137,7 @@ namespace CanTingLogin
             // 
             this.cbkRememberPwd.AutoSize = true;
             this.cbkRememberPwd.Font = new System.Drawing.Font("楷体", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cbkRememberPwd.Location = new System.Drawing.Point(28, 223);
+            this.cbkRememberPwd.Location = new System.Drawing.Point(28, 192);
             this.cbkRememberPwd.Name = "cbkRememberPwd";
             this.cbkRememberPwd.Size = new System.Drawing.Size(108, 24);
             this.cbkRememberPwd.TabIndex = 25;
@@ -180,7 +148,7 @@ namespace CanTingLogin
             // 
             this.panel2.Controls.Add(this.linkLabel2);
             this.panel2.Controls.Add(this.linkLabel1);
-            this.panel2.Location = new System.Drawing.Point(157, 322);
+            this.panel2.Location = new System.Drawing.Point(165, 306);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(270, 42);
             this.panel2.TabIndex = 23;
@@ -241,18 +209,16 @@ namespace CanTingLogin
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtPassWord;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comPost;
-        private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox cbkRememberPwd;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Sunny.UI.UIButton ubtnLogin;
+        private System.Windows.Forms.ComboBox cmbUser;
+        private System.Windows.Forms.TextBox txtUserPwd;
     }
 }
 

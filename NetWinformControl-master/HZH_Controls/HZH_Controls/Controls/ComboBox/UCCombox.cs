@@ -437,6 +437,8 @@ namespace HZH_Controls.Controls
             }
         }
 
+        public object Items { get; set; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="UCCombox" /> class.
         /// </summary>
