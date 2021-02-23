@@ -10,6 +10,6 @@ namespace CanTingModes
     {
         //点菜类
         public int ZuoWeiId { get; set; }//座位号
-        public int CaiPinId { get; set; }//菜品号
+        public int CaiPinId { get; set; }//菜品
     }
 }
