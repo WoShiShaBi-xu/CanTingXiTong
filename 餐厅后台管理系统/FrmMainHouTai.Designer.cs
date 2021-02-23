@@ -123,6 +123,7 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.Y)));
             this.座位停用设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.座位停用设置ToolStripMenuItem.Text = "座位停/用设置";
+            this.座位停用设置ToolStripMenuItem.Click += new System.EventHandler(this.座位停用设置ToolStripMenuItem_Click_1);
             // 
             // 菜品停用设置ToolStripMenuItem
             // 
@@ -131,6 +132,7 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.J)));
             this.菜品停用设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.菜品停用设置ToolStripMenuItem.Text = "菜品价格设置";
+            this.菜品停用设置ToolStripMenuItem.Click += new System.EventHandler(this.菜品停用设置ToolStripMenuItem_Click);
             // 
             // 沽清设置ToolStripMenuItem
             // 
@@ -139,6 +141,7 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.K)));
             this.沽清设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.沽清设置ToolStripMenuItem.Text = "沽清设置(售完)";
+            this.沽清设置ToolStripMenuItem.Click += new System.EventHandler(this.沽清设置ToolStripMenuItem_Click);
             // 
             // 大厅楼层设置ToolStripMenuItem
             // 
@@ -147,6 +150,7 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.L)));
             this.大厅楼层设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.大厅楼层设置ToolStripMenuItem.Text = "大厅楼层设置";
+            this.大厅楼层设置ToolStripMenuItem.Click += new System.EventHandler(this.大厅楼层设置ToolStripMenuItem_Click);
             // 
             // 销售品设置ToolStripMenuItem
             // 
