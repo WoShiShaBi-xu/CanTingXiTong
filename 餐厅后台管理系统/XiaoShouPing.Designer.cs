@@ -1,5 +1,5 @@
 ﻿
-namespace CanTingLogin
+namespace 餐厅后台管理系统
 {
     partial class XiaoShouPing
     {
