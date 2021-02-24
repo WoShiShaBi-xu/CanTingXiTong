@@ -11,7 +11,6 @@ namespace CanTingModes
         //座位类
         public int ZuoWeiId { get; set; }//座位编号
         public string ZuoWeiBeiZhu { get; set; }//座位备注
-        public int ZuoWeiLiuShuiDanId { get; set; }//座位流水单编号
         public int ZuoWeiZhuangTaiId { get; set; }//座位状态编号
         public CengShu CengShu { get; set; }//楼层编号
         public string ZuoWeiTingYong { get; set; }//座位停用设置

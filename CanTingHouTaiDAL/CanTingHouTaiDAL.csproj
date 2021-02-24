@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CaiPinFenLeiSeriver.cs" />
+    <Compile Include="DanWeiSeriver.cs" />
     <Compile Include="DBHelper.cs" />
+    <Compile Include="LouCengSeriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XiaoShouPinSeriver.cs" />
     <Compile Include="ZuoWeiServer.cs" />

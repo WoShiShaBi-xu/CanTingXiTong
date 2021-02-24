@@ -47,18 +47,75 @@ namespace 餐厅后台管理系统
 
         private void 添加销售品ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("将打开窗体，请点击添加按钮","添加提示",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            FrmXiaoShouPin frm = new FrmXiaoShouPin();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void 多条件查询销售品ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmXiaoShouPin frm = new FrmXiaoShouPin();
+            frm.MdiParent = this;
             frm.Show();
         }
 
         private void FrmMainHouTai_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void 修改销售品信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("将打开窗体，请点击修改","修改提示",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            FrmXiaoShouPin frm = new FrmXiaoShouPin();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void 删除销售品ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("将打开窗体，请选择销售品进行删除", "删除提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            FrmXiaoShouPin frm = new FrmXiaoShouPin();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void 座位维修设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmZuoWei frm = new FrmZuoWei();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            FrmXiaoShouPin frm = new FrmXiaoShouPin();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void 关于HToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAbout frm = new FrmAbout();
+            frm.ShowDialog();
+        }
+
+        private void 更新座位ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAddZuoWei frm = new FrmAddZuoWei();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void FrmMainHouTai_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CaiPinFenLeiManager.cs" />
+    <Compile Include="DanWeiManager.cs" />
+    <Compile Include="LouCengManager.cs" />
     <Compile Include="XiaoShouPinManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZuoWeiManager.cs" />

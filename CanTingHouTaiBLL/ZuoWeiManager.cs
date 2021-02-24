@@ -12,9 +12,13 @@ namespace CanTingHouTaiBLL
     {
         ZuoWeiServer zuoWeiServer = new ZuoWeiServer();
 
-        public List<ZuoWei> ChaXunZuoWei()
+        public List<ZuoWei> ChaXunZuoWei(int cengShuId=-1)
         {
-            return zuoWeiServer.ChaXunZuoWei();
+            return zuoWeiServer.ChaXunZuoWei(cengShuId);
+        }
+
+        public int AddZuoWei(List<ZuoWei> list) {
+            return zuoWeiServer.AddZuoWei(list);
         }
     }
 }

@@ -6,15 +6,24 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using CanTingModes;
+using System.Data.SqlClient;
 
 namespace CanTingHouTaiDAL
 {
     public class ZuoWeiServer
     {
         DBHelper db = new DBHelper();
-        public List<ZuoWei> ChaXunZuoWei()
+        /// <summary>
+        /// 加载座位
+        /// </summary>
+        /// <returns></returns>
+        public List<ZuoWei> ChaXunZuoWei(int cengShuId=-1)
         {
-            string sql = "select ZuoWeiId, ZuoWeiBeiZhu, cs.CengShuMiaoShu, ZuoWeiTingYong from ZuoWei zw inner join CengShu cs on zw.CengShuId =cs.CengShuId";
+            string sql = "select ZuoWeiId, ZuoWeiBeiZhu, cs.CengShuMiaoShu, ZuoWeiTingYong from ZuoWei zw inner join CengShu cs on zw.CengShuId =cs.CengShuId where 1=1 ";
+            if (cengShuId!=-1)
+            {
+                sql += " and cs.CengShuId="+cengShuId;
+            }
             DataTable dt = db.GetTable(sql, "Student");
             List<ZuoWei> list = new List<ZuoWei>();
             foreach (DataRow dr in dt.Rows)
@@ -25,13 +34,29 @@ namespace CanTingHouTaiDAL
                     ZuoWeiBeiZhu = dr["ZuoWeiBeiZhu"].ToString(),
                      CengShu = new CengShu()
                      {
-                         CengShuMiaoShu=dr["cs.CengShuMiaoShu"].ToString()
+                         CengShuMiaoShu=dr["CengShuMiaoShu"].ToString()
                      },
                     ZuoWeiTingYong = dr["ZuoWeiTingYong"].ToString()
                 };
                 list.Add(zuoWei);
             }
             return list;
+        }
+
+        public int AddZuoWei(List<ZuoWei> list) {
+            int count = 0;
+            foreach (ZuoWei item in list)
+            {
+                string sql = "insert into ZuoWei(ZuoWeiBeiZhu, ZuoWeiZhuangTaiId, CengShuId, ZuoWeiTingYong)values(@ZuoWeiBeiZhu, @ZuoWeiZhuangTaiId, @CengShuId, @ZuoWeiTingYong)";
+                SqlParameter[] sp = {
+                    new SqlParameter("@ZuoWeiBeiZhu",item.ZuoWeiBeiZhu),
+                    new SqlParameter("@ZuoWeiZhuangTaiId",item.ZuoWeiZhuangTaiId),
+                    new SqlParameter("@CengShuId",item.CengShu.CengShuId),
+                    new SqlParameter("@ZuoWeiTingYong",item.ZuoWeiTingYong)
+                };
+                count = db.ExecuteNonQuery(sql,sp);
+            }
+            return count;
         }
     }
 }

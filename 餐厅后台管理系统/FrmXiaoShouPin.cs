@@ -16,6 +16,9 @@ namespace 餐厅后台管理系统
     {
         CaiPinFenLeiManager caiPinFenLeiManager = new CaiPinFenLeiManager();
         XiaoShouPinManager xiaoShouPinManager = new XiaoShouPinManager();
+        DanWeiManager danWeiManager = new DanWeiManager();
+        public int tianJia = -1;
+        public int count = 1;
         public FrmXiaoShouPin()
         {
             InitializeComponent();
@@ -25,6 +28,8 @@ namespace 餐厅后台管理系统
         {
             dgvXiaosShouPin.AutoGenerateColumns = false;
             LoadTreeLeiBie();
+            LoadFenLei();
+            LoadDanWei();
         }
 
         #region 输入验证
@@ -60,11 +65,6 @@ namespace 餐厅后台管理系统
                 utxtTeJia.Focus();
                 return false;
             }
-            if (!cbDaChe.Checked)
-            {
-                MessageBox.Show("未选中打折框！", "输入提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
             if (ucmbCaiPinType.SelectedIndex == 0)
             {
                 MessageBox.Show("未选择菜品类型！", "输入提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -94,9 +94,18 @@ namespace 餐厅后台管理系统
                 return;
             }
             CaiPin caiPin = (CaiPin)dgvXiaosShouPin.SelectedRows[0].DataBoundItem;
-            if (MessageBox.Show("确定要删除"+caiPin.caiPinMingZi+"？")==DialogResult.Yes)
+            if (MessageBox.Show("确定要删除"+caiPin.caiPinMingZi+"？","删除提示",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
-                //删除操作
+               int count= xiaoShouPinManager.DeleteXiaoShouPin(caiPin.CaiPinId);
+                if (count>0)
+                {
+                    MessageBox.Show("删除成功！","删除提示",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    LoadXiaoShouPin();
+                }
+                else
+                {
+                    MessageBox.Show("删除失败！", "删除提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -108,6 +117,21 @@ namespace 餐厅后台管理系统
         private void uiButton4_Click(object sender, EventArgs e)
         {
             groupBox3.Enabled = true;
+            CearUtxt();
+            tianJia = 1;
+        }
+
+        /// <summary>
+        /// 清空输入框
+        /// </summary>
+        public void CearUtxt() {
+            utxtDianDanShu.Text = "";
+            utxtKuCun.Text = "";
+            utxtName.Text = "";
+            utxtPrice.Text = "";
+            utxtTeJia.Text = "";
+            ucmbCaiPinType.Text = "--请选择--";
+            ucmbDanWei.Text = "--请选择--";
         }
 
         /// <summary>
@@ -129,8 +153,33 @@ namespace 餐厅后台管理系统
                     CaiPinDianDanShu = int.Parse(utxtDianDanShu.Text),
                     CaiPinJiaGe = double.Parse(utxtPrice.Text.ToString()),
                     CaiPinKuCun = int.Parse(utxtKuCun.Text),
-                    CaiPinTeJia = double.Parse(utxtTeJia.Text.ToString())
+                    CaiPinTeJia = double.Parse(utxtTeJia.Text.ToString()),
+                    DanWei = new DanWei() {
+                        DanWeiId = (int)ucmbDanWei.SelectedValue,
+                    }
                 };
+                int count = 0;
+                if (tianJia==1)
+                {
+                    count = xiaoShouPinManager.AddXiaoShouPin(caiPin);
+                    tianJia = -1;
+                }
+                else
+                {
+                    CaiPin c = (CaiPin)dgvXiaosShouPin.SelectedRows[0].DataBoundItem;
+                    caiPin.CaiPinId = c.CaiPinId;
+                    count = xiaoShouPinManager.ChangerXiaoShouPin(caiPin);
+                }
+                if (count > 0)
+                {
+                    MessageBox.Show("保存成功！", "保存提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadXiaoShouPin();
+                    CearUtxt();
+                }
+                else
+                {
+                    MessageBox.Show("保存失败！", "保存提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -168,19 +217,90 @@ namespace 餐厅后台管理系统
         /// <param name="e"></param>
         private void utvXiaoShouPin_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            count = 1;
+            LoadXiaoShouPin();
+        }
+        /// <summary>
+        /// 加载销售品
+        /// </summary>
+        public void LoadXiaoShouPin() {
             int index = -1;
-            
-            if (utvXiaoShouPin.SelectedNode.Level==0)
-            {
-                
-            }
-            else
+
+            if (utvXiaoShouPin.SelectedNode.Level != 0)
             {
                 CalPinFenLei cai = (CalPinFenLei)utvXiaoShouPin.SelectedNode.Tag;
                 index = cai.CaiPinFenLeiId;
             }
-            List<CaiPin> list = xiaoShouPinManager.SearchXiaoShouPin(index);
+            List<CaiPin> list = xiaoShouPinManager.SearchXiaoShouPin(index,count);
+            if (list.Count==0)
+            {
+                MessageBox.Show("已经是最后一页！","翻页提示",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
             dgvXiaosShouPin.DataSource = list;
+            for (int i = 0; i < list.Count; i++)
+            {
+                dgvXiaosShouPin.Rows[i].Cells["clDanWei"].Value = list[i].DanWei.DanWeiMiaoShu;
+                dgvXiaosShouPin.Rows[i].Cells["clLeiXing"].Value = list[i].CaiPinFenLei.CaiPinFenLeiMiaoShu;
+            }
+        }
+
+        /// <summary>
+        /// 加载数据到修改框
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void dgvXiaosShouPin_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            groupBox3.Enabled = true;
+            CaiPin caiPin = (CaiPin)dgvXiaosShouPin.SelectedRows[0].DataBoundItem;
+            utxtName.Text = caiPin.caiPinMingZi;
+            utxtDianDanShu.Text = caiPin.CaiPinDianDanShu.ToString();
+            utxtKuCun.Text = caiPin.CaiPinKuCun.ToString();
+            utxtPrice.Text = caiPin.CaiPinJiaGe.ToString();
+            utxtTeJia.Text = caiPin.CaiPinTeJia.ToString();
+            ucmbCaiPinType.Text = caiPin.CaiPinFenLei.CaiPinFenLeiMiaoShu;
+            ucmbDanWei.Text = caiPin.DanWei.DanWeiMiaoShu;
+        }
+
+        /// <summary>
+        /// 加载类型下拉框
+        /// </summary>
+        public void LoadFenLei() {
+            List<CalPinFenLei> list = caiPinFenLeiManager.SearchCaiPinFenLei();
+            list.Insert(0,new CalPinFenLei { CaiPinFenLeiId = -1, CaiPinFenLeiMiaoShu = "--请选择--" });
+            ucmbCaiPinType.DataSource = list;
+            ucmbCaiPinType.ValueMember = "CaiPinFenLeiId";
+            ucmbCaiPinType.DisplayMember = "CaiPinFenLeiMiaoShu";
+            ucmbCaiPinType.SelectedIndex = 0;
+        }
+        /// <summary>
+        /// 加载单位到下拉框
+        /// </summary>
+        public void LoadDanWei() {
+            List<DanWei> list = danWeiManager.LoadDanWei();
+            list.Insert(0, new DanWei { DanWeiId = -1, DanWeiMiaoShu = "--请选择--" });
+            ucmbDanWei.DataSource = list;
+            ucmbDanWei.ValueMember = "DanWeiId";
+            ucmbDanWei.DisplayMember = "DanWeiMiaoShu";
+            ucmbDanWei.SelectedIndex = 0;
+        }
+
+        private void ubtnShangyiYe_Click(object sender, EventArgs e)
+        {
+            if (count==1)
+            {
+                MessageBox.Show("已经是第一页！","翻页提示",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
+            count--;
+            LoadXiaoShouPin();
+        }
+
+        private void ubtnXiaYiYe_Click(object sender, EventArgs e)
+        {
+            count++;
+            LoadXiaoShouPin();
         }
     }
 }
