@@ -16,6 +16,7 @@ namespace CanTingModes
         public int CaiPinDianDanShu { get; set; }//菜品点单数
         public CalPinFenLei CaiPinFenLei { get; set; }//菜品分类编号
         public int CaiPinKuCun { get; set; }//菜品库存
+        public DanWei DanWei { get; set; }//单位
 
     }
 }

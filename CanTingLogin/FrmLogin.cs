@@ -13,6 +13,7 @@ using CanTingModes;
 using CanTingBLL;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using 餐厅后台管理系统;
 
 namespace CanTingLogin
 {
@@ -171,7 +172,7 @@ namespace CanTingLogin
                 }
                 else
                 {
-                    FrmMain fm = new FrmMain();
+                     FrmMainHouTai fm= new FrmMainHouTai();
                     fm.Show();
                     this.Hide();
                 }

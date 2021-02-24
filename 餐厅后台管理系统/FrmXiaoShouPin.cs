@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CanTingModes;
+using CanTingHouTaiBLL;
 
 namespace 餐厅后台管理系统
 {
     public partial class FrmXiaoShouPin : Form
     {
+        CaiPinFenLeiManager caiPinFenLeiManager = new CaiPinFenLeiManager();
+        XiaoShouPinManager xiaoShouPinManager = new XiaoShouPinManager();
         public FrmXiaoShouPin()
         {
             InitializeComponent();
@@ -20,7 +23,8 @@ namespace 餐厅后台管理系统
 
         private void FrmXiaoShouPin_Load(object sender, EventArgs e)
         {
-
+            dgvXiaosShouPin.AutoGenerateColumns = false;
+            LoadTreeLeiBie();
         }
 
         #region 输入验证
@@ -103,17 +107,7 @@ namespace 餐厅后台管理系统
         /// <param name="e"></param>
         private void uiButton4_Click(object sender, EventArgs e)
         {
-            CaiPin caiPin = new CaiPin()
-            {
-                caiPinMingZi = utxtName.Text,
-                CaiPinFenLei = new CalPinFenLei() {
-                    CaiPinFenLeiId = (int)ucmbCaiPinType.SelectedValue
-                },
-                CaiPinDianDanShu = int.Parse(utxtDianDanShu.Text),
-                CaiPinJiaGe = double.Parse(utxtPrice.Text.ToString()),
-                CaiPinKuCun = int.Parse(utxtKuCun.Text),
-                CaiPinTeJia = double.Parse(utxtTeJia.Text.ToString())
-            };
+            groupBox3.Enabled = true;
         }
 
         /// <summary>
@@ -155,17 +149,38 @@ namespace 餐厅后台管理系统
         /// 加载销售品类别到树形菜单
         /// </summary>
         public void LoadTreeLeiBie() {
-            
+            List<CalPinFenLei> list = caiPinFenLeiManager.SearchCaiPinFenLei();
+            TreeNode root = utvXiaoShouPin.Nodes[0];
+            foreach (CalPinFenLei item in list)
+            {
+                TreeNode tn = new TreeNode() {
+                    Tag = item,
+                    Text = item.CaiPinFenLeiMiaoShu
+                };
+                root.Nodes.Add(tn);
+            }
         }
 
         /// <summary>
-        /// 单击组件时发生
+        /// 更改属性时发生，加载类型销售品
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void utvXiaoShouPin_Click(object sender, EventArgs e)
+        private void utvXiaoShouPin_AfterSelect(object sender, TreeViewEventArgs e)
         {
-
+            int index = -1;
+            
+            if (utvXiaoShouPin.SelectedNode.Level==0)
+            {
+                
+            }
+            else
+            {
+                CalPinFenLei cai = (CalPinFenLei)utvXiaoShouPin.SelectedNode.Tag;
+                index = cai.CaiPinFenLeiId;
+            }
+            List<CaiPin> list = xiaoShouPinManager.SearchXiaoShouPin(index);
+            dgvXiaosShouPin.DataSource = list;
         }
     }
 }

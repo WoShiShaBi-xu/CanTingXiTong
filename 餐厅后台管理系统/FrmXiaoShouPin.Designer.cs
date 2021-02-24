@@ -40,9 +40,6 @@ namespace 餐厅后台管理系统
             this.ucmbDanWei = new Sunny.UI.UIComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.uiButton2 = new Sunny.UI.UIButton();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ucmbCaiPinType = new Sunny.UI.UIComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbDaChe = new System.Windows.Forms.CheckBox();
@@ -53,21 +50,26 @@ namespace 餐厅后台管理系统
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.utxtPrice = new Sunny.UI.UITextBox();
             this.utxtKuCun = new Sunny.UI.UITextBox();
             this.utxtDianDanShu = new Sunny.UI.UITextBox();
             this.utxtTeJia = new Sunny.UI.UITextBox();
             this.utxtName = new Sunny.UI.UITextBox();
-            this.utxtPrice = new Sunny.UI.UITextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.utvXiaoShouPin = new Sunny.UI.UITreeView();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvXiaosShouPin = new Sunny.UI.UIDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.utvXiaoShouPin.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvXiaosShouPin)).BeginInit();
             this.SuspendLayout();
@@ -81,7 +83,7 @@ namespace 餐厅后台管理系统
             this.uiButton3.FillPressColor = System.Drawing.Color.Red;
             this.uiButton3.FillSelectedColor = System.Drawing.Color.Red;
             this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiButton3.Location = new System.Drawing.Point(1143, 824);
+            this.uiButton3.Location = new System.Drawing.Point(1147, 759);
             this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton3.Name = "uiButton3";
             this.uiButton3.Radius = 20;
@@ -104,7 +106,7 @@ namespace 餐厅后台管理系统
             this.uiButton5.FillPressColor = System.Drawing.Color.Gray;
             this.uiButton5.FillSelectedColor = System.Drawing.Color.Silver;
             this.uiButton5.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiButton5.Location = new System.Drawing.Point(1325, 824);
+            this.uiButton5.Location = new System.Drawing.Point(1329, 759);
             this.uiButton5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton5.Name = "uiButton5";
             this.uiButton5.Radius = 20;
@@ -124,7 +126,7 @@ namespace 餐厅后台管理系统
             this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton4.FillColor = System.Drawing.Color.SkyBlue;
             this.uiButton4.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiButton4.Location = new System.Drawing.Point(779, 824);
+            this.uiButton4.Location = new System.Drawing.Point(783, 759);
             this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton4.Name = "uiButton4";
             this.uiButton4.Radius = 20;
@@ -172,7 +174,7 @@ namespace 餐厅后台管理系统
             this.uiButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiButton2.Location = new System.Drawing.Point(961, 824);
+            this.uiButton2.Location = new System.Drawing.Point(965, 759);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.Radius = 20;
@@ -185,24 +187,6 @@ namespace 餐厅后台管理系统
             this.uiButton2.TabIndex = 9;
             this.uiButton2.Text = "删除";
             this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "库存";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "菜品类型";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "点单数";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
             // 
             // ucmbCaiPinType
             // 
@@ -234,14 +218,14 @@ namespace 餐厅后台管理系统
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.utxtPrice);
             this.groupBox3.Controls.Add(this.utxtKuCun);
             this.groupBox3.Controls.Add(this.utxtDianDanShu);
             this.groupBox3.Controls.Add(this.utxtTeJia);
             this.groupBox3.Controls.Add(this.utxtName);
-            this.groupBox3.Controls.Add(this.utxtPrice);
             this.groupBox3.Enabled = false;
             this.groupBox3.Font = new System.Drawing.Font("楷体", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox3.Location = new System.Drawing.Point(324, 605);
+            this.groupBox3.Location = new System.Drawing.Point(324, 514);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1149, 201);
             this.groupBox3.TabIndex = 10;
@@ -327,100 +311,88 @@ namespace 餐厅后台管理系统
             this.label1.TabIndex = 9;
             this.label1.Text = "描述";
             // 
-            // utxtKuCun
-            // 
-            this.utxtKuCun.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.utxtKuCun.FillColor = System.Drawing.Color.White;
-            this.utxtKuCun.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.utxtKuCun.Location = new System.Drawing.Point(763, 102);
-            this.utxtKuCun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.utxtKuCun.Maximum = 2147483647D;
-            this.utxtKuCun.Minimum = -2147483648D;
-            this.utxtKuCun.MinimumSize = new System.Drawing.Size(1, 1);
-            this.utxtKuCun.Name = "utxtKuCun";
-            this.utxtKuCun.Padding = new System.Windows.Forms.Padding(5);
-            this.utxtKuCun.RectColor = System.Drawing.Color.SkyBlue;
-            this.utxtKuCun.Size = new System.Drawing.Size(192, 34);
-            this.utxtKuCun.Style = Sunny.UI.UIStyle.Custom;
-            this.utxtKuCun.TabIndex = 3;
-            // 
-            // utxtDianDanShu
-            // 
-            this.utxtDianDanShu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.utxtDianDanShu.FillColor = System.Drawing.Color.White;
-            this.utxtDianDanShu.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.utxtDianDanShu.Location = new System.Drawing.Point(137, 103);
-            this.utxtDianDanShu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.utxtDianDanShu.Maximum = 2147483647D;
-            this.utxtDianDanShu.Minimum = -2147483648D;
-            this.utxtDianDanShu.MinimumSize = new System.Drawing.Size(1, 1);
-            this.utxtDianDanShu.Name = "utxtDianDanShu";
-            this.utxtDianDanShu.Padding = new System.Windows.Forms.Padding(5);
-            this.utxtDianDanShu.RectColor = System.Drawing.Color.SkyBlue;
-            this.utxtDianDanShu.Size = new System.Drawing.Size(192, 34);
-            this.utxtDianDanShu.Style = Sunny.UI.UIStyle.Custom;
-            this.utxtDianDanShu.TabIndex = 3;
-            // 
-            // utxtTeJia
-            // 
-            this.utxtTeJia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.utxtTeJia.FillColor = System.Drawing.Color.White;
-            this.utxtTeJia.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.utxtTeJia.Location = new System.Drawing.Point(763, 41);
-            this.utxtTeJia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.utxtTeJia.Maximum = 2147483647D;
-            this.utxtTeJia.Minimum = -2147483648D;
-            this.utxtTeJia.MinimumSize = new System.Drawing.Size(1, 1);
-            this.utxtTeJia.Name = "utxtTeJia";
-            this.utxtTeJia.Padding = new System.Windows.Forms.Padding(5);
-            this.utxtTeJia.RectColor = System.Drawing.Color.SkyBlue;
-            this.utxtTeJia.Size = new System.Drawing.Size(192, 34);
-            this.utxtTeJia.Style = Sunny.UI.UIStyle.Custom;
-            this.utxtTeJia.TabIndex = 3;
-            // 
-            // utxtName
-            // 
-            this.utxtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.utxtName.FillColor = System.Drawing.Color.White;
-            this.utxtName.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.utxtName.Location = new System.Drawing.Point(137, 37);
-            this.utxtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.utxtName.Maximum = 2147483647D;
-            this.utxtName.Minimum = -2147483648D;
-            this.utxtName.MinimumSize = new System.Drawing.Size(1, 1);
-            this.utxtName.Name = "utxtName";
-            this.utxtName.Padding = new System.Windows.Forms.Padding(5);
-            this.utxtName.RectColor = System.Drawing.Color.SkyBlue;
-            this.utxtName.Size = new System.Drawing.Size(192, 34);
-            this.utxtName.Style = Sunny.UI.UIStyle.Custom;
-            this.utxtName.TabIndex = 3;
-            // 
             // utxtPrice
             // 
             this.utxtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.utxtPrice.FillColor = System.Drawing.Color.White;
             this.utxtPrice.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.utxtPrice.Location = new System.Drawing.Point(472, 41);
+            this.utxtPrice.Location = new System.Drawing.Point(472, 46);
             this.utxtPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.utxtPrice.Maximum = 2147483647D;
             this.utxtPrice.Minimum = -2147483648D;
             this.utxtPrice.MinimumSize = new System.Drawing.Size(1, 1);
             this.utxtPrice.Name = "utxtPrice";
             this.utxtPrice.Padding = new System.Windows.Forms.Padding(5);
-            this.utxtPrice.RectColor = System.Drawing.Color.SkyBlue;
             this.utxtPrice.Size = new System.Drawing.Size(192, 34);
-            this.utxtPrice.Style = Sunny.UI.UIStyle.Custom;
-            this.utxtPrice.TabIndex = 2;
+            this.utxtPrice.TabIndex = 19;
+            // 
+            // utxtKuCun
+            // 
+            this.utxtKuCun.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.utxtKuCun.FillColor = System.Drawing.Color.White;
+            this.utxtKuCun.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.utxtKuCun.Location = new System.Drawing.Point(121, 46);
+            this.utxtKuCun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.utxtKuCun.Maximum = 2147483647D;
+            this.utxtKuCun.Minimum = -2147483648D;
+            this.utxtKuCun.MinimumSize = new System.Drawing.Size(1, 1);
+            this.utxtKuCun.Name = "utxtKuCun";
+            this.utxtKuCun.Padding = new System.Windows.Forms.Padding(5);
+            this.utxtKuCun.Size = new System.Drawing.Size(263, 34);
+            this.utxtKuCun.TabIndex = 19;
+            // 
+            // utxtDianDanShu
+            // 
+            this.utxtDianDanShu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.utxtDianDanShu.FillColor = System.Drawing.Color.White;
+            this.utxtDianDanShu.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.utxtDianDanShu.Location = new System.Drawing.Point(121, 103);
+            this.utxtDianDanShu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.utxtDianDanShu.Maximum = 2147483647D;
+            this.utxtDianDanShu.Minimum = -2147483648D;
+            this.utxtDianDanShu.MinimumSize = new System.Drawing.Size(1, 1);
+            this.utxtDianDanShu.Name = "utxtDianDanShu";
+            this.utxtDianDanShu.Padding = new System.Windows.Forms.Padding(5);
+            this.utxtDianDanShu.Size = new System.Drawing.Size(124, 34);
+            this.utxtDianDanShu.TabIndex = 20;
+            // 
+            // utxtTeJia
+            // 
+            this.utxtTeJia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.utxtTeJia.FillColor = System.Drawing.Color.White;
+            this.utxtTeJia.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.utxtTeJia.Location = new System.Drawing.Point(763, 46);
+            this.utxtTeJia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.utxtTeJia.Maximum = 2147483647D;
+            this.utxtTeJia.Minimum = -2147483648D;
+            this.utxtTeJia.MinimumSize = new System.Drawing.Size(1, 1);
+            this.utxtTeJia.Name = "utxtTeJia";
+            this.utxtTeJia.Padding = new System.Windows.Forms.Padding(5);
+            this.utxtTeJia.Size = new System.Drawing.Size(150, 34);
+            this.utxtTeJia.TabIndex = 21;
+            // 
+            // utxtName
+            // 
+            this.utxtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.utxtName.FillColor = System.Drawing.Color.White;
+            this.utxtName.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.utxtName.Location = new System.Drawing.Point(763, 103);
+            this.utxtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.utxtName.Maximum = 2147483647D;
+            this.utxtName.Minimum = -2147483648D;
+            this.utxtName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.utxtName.Name = "utxtName";
+            this.utxtName.Padding = new System.Windows.Forms.Padding(5);
+            this.utxtName.Size = new System.Drawing.Size(150, 34);
+            this.utxtName.TabIndex = 22;
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.utvXiaoShouPin);
             this.groupBox1.Font = new System.Drawing.Font("楷体", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(306, 852);
+            this.groupBox1.Size = new System.Drawing.Size(306, 794);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "销售品类别管理";
@@ -429,6 +401,7 @@ namespace 餐厅后台管理系统
             // 
             this.utvXiaoShouPin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.utvXiaoShouPin.Controls.Add(this.treeView1);
             this.utvXiaoShouPin.FillColor = System.Drawing.Color.White;
             this.utvXiaoShouPin.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.utvXiaoShouPin.Location = new System.Drawing.Point(7, 26);
@@ -441,17 +414,18 @@ namespace 餐厅后台管理系统
             treeNode1});
             this.utvXiaoShouPin.RectColor = System.Drawing.Color.SkyBlue;
             this.utvXiaoShouPin.SelectedNode = null;
-            this.utvXiaoShouPin.Size = new System.Drawing.Size(292, 818);
+            this.utvXiaoShouPin.Size = new System.Drawing.Size(292, 761);
             this.utvXiaoShouPin.Style = Sunny.UI.UIStyle.Custom;
             this.utvXiaoShouPin.TabIndex = 1;
             this.utvXiaoShouPin.Text = "uiTreeView1";
-            this.utvXiaoShouPin.Click += new System.EventHandler(this.utvXiaoShouPin_Click);
+            this.utvXiaoShouPin.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.utvXiaoShouPin_AfterSelect);
             // 
-            // Column8
+            // treeView1
             // 
-            this.Column8.HeaderText = "单位";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
+            this.treeView1.Location = new System.Drawing.Point(170, 140);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(121, 97);
+            this.treeView1.TabIndex = 3;
             // 
             // groupBox2
             // 
@@ -461,7 +435,7 @@ namespace 餐厅后台管理系统
             this.groupBox2.Font = new System.Drawing.Font("楷体", 13.91597F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.Location = new System.Drawing.Point(324, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1149, 587);
+            this.groupBox2.Size = new System.Drawing.Size(1149, 496);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "销售品菜单列表";
@@ -499,7 +473,7 @@ namespace 餐厅后台管理系统
             this.dgvXiaosShouPin.EnableHeadersVisualStyles = false;
             this.dgvXiaosShouPin.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.dgvXiaosShouPin.GridColor = System.Drawing.Color.SkyBlue;
-            this.dgvXiaosShouPin.Location = new System.Drawing.Point(6, 29);
+            this.dgvXiaosShouPin.Location = new System.Drawing.Point(12, 26);
             this.dgvXiaosShouPin.Name = "dgvXiaosShouPin";
             this.dgvXiaosShouPin.RectColor = System.Drawing.Color.SkyBlue;
             this.dgvXiaosShouPin.RowHeadersVisible = false;
@@ -510,11 +484,12 @@ namespace 餐厅后台管理系统
             this.dgvXiaosShouPin.SelectedIndex = -1;
             this.dgvXiaosShouPin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvXiaosShouPin.ShowGridLine = true;
-            this.dgvXiaosShouPin.Size = new System.Drawing.Size(1137, 546);
+            this.dgvXiaosShouPin.Size = new System.Drawing.Size(1137, 461);
             this.dgvXiaosShouPin.TabIndex = 0;
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "caiPinMingZi";
             this.Column1.HeaderText = "描述";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
@@ -522,21 +497,51 @@ namespace 餐厅后台管理系统
             // 
             // Column2
             // 
+            this.Column2.DataPropertyName = "CaiPinJiaGe";
             this.Column2.HeaderText = "价格";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
+            this.Column3.DataPropertyName = "CaiPinTeJia";
             this.Column3.HeaderText = "特价";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "DanWeiMiaoShu";
+            this.Column8.HeaderText = "单位";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "CaiPinDianDanShu";
+            this.Column4.HeaderText = "点单数";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "CaiPinFenLeiMiaoShu";
+            this.Column5.HeaderText = "菜品类型";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "CaiPinKuCun";
+            this.Column6.HeaderText = "库存";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
             // 
             // FrmXiaoShouPin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1485, 876);
+            this.ClientSize = new System.Drawing.Size(1485, 814);
             this.Controls.Add(this.uiButton3);
             this.Controls.Add(this.uiButton5);
             this.Controls.Add(this.uiButton4);
@@ -553,6 +558,7 @@ namespace 餐厅后台管理系统
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.utvXiaoShouPin.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvXiaosShouPin)).EndInit();
             this.ResumeLayout(false);
@@ -567,9 +573,6 @@ namespace 餐厅后台管理系统
         private Sunny.UI.UIComboBox ucmbDanWei;
         private System.Windows.Forms.Label label8;
         private Sunny.UI.UIButton uiButton2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private Sunny.UI.UIComboBox ucmbCaiPinType;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox cbDaChe;
@@ -584,14 +587,18 @@ namespace 餐厅后台管理系统
         private Sunny.UI.UITextBox utxtDianDanShu;
         private Sunny.UI.UITextBox utxtTeJia;
         private Sunny.UI.UITextBox utxtName;
-        private Sunny.UI.UITextBox utxtPrice;
         private System.Windows.Forms.GroupBox groupBox1;
         private Sunny.UI.UITreeView utvXiaoShouPin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.GroupBox groupBox2;
         private Sunny.UI.UIDataGridView dgvXiaosShouPin;
+        private Sunny.UI.UITextBox utxtPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }

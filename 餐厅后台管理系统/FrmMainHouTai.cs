@@ -55,5 +55,10 @@ namespace 餐厅后台管理系统
             FrmXiaoShouPin frm = new FrmXiaoShouPin();
             frm.Show();
         }
+
+        private void FrmMainHouTai_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

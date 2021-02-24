@@ -536,6 +536,7 @@ namespace 餐厅后台管理系统
             this.Name = "FrmMainHouTai";
             this.Text = "餐厅管理系统后台主界面";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMainHouTai_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);

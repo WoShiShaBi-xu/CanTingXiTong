@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaiPinFenLeiSeriver.cs" />
     <Compile Include="DBHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XiaoShouPinSeriver.cs" />
     <Compile Include="ZuoWeiServer.cs" />
   </ItemGroup>
   <ItemGroup>
