@@ -126,5 +126,17 @@ namespace 餐厅后台管理系统
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void 日营业额统计ToolStripMenuItem_Click( object sender , EventArgs e ) {
+            RiYinYeE ri = new RiYinYeE();
+            ri.MdiParent = this;
+            ri.Show();
+        }
+
+        private void 员工工资报表ToolStripMenuItem_Click( object sender , EventArgs e ) {
+            FrmYuanGongBaoBiao frm = new FrmYuanGongBaoBiao();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

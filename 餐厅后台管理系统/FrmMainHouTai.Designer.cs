@@ -42,7 +42,6 @@ namespace 餐厅后台管理系统
             this.删除销售品ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.日营业额统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.人均消费报表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.员工工资报表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.员工设置GToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加新员工ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,11 +53,6 @@ namespace 餐厅后台管理系统
             this.删除座位ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.客人信息设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.客人基本信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-
-           
-
-
-
             this.系统设置XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.前台锁定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -190,7 +184,6 @@ namespace 餐厅后台管理系统
             // 
             this.统计ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.日营业额统计ToolStripMenuItem,
-            this.人均消费报表ToolStripMenuItem,
             this.员工工资报表ToolStripMenuItem});
             this.统计ToolStripMenuItem.Name = "统计ToolStripMenuItem";
             this.统计ToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
@@ -203,14 +196,7 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.H)));
             this.日营业额统计ToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
             this.日营业额统计ToolStripMenuItem.Text = "营业额统计";
-            // 
-            // 人均消费报表ToolStripMenuItem
-            // 
-            this.人均消费报表ToolStripMenuItem.Name = "人均消费报表ToolStripMenuItem";
-            this.人均消费报表ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.E)));
-            this.人均消费报表ToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
-            this.人均消费报表ToolStripMenuItem.Text = "人均消费报表";
+            this.日营业额统计ToolStripMenuItem.Click += new System.EventHandler(this.日营业额统计ToolStripMenuItem_Click);
             // 
             // 员工工资报表ToolStripMenuItem
             // 
@@ -218,7 +204,8 @@ namespace 餐厅后台管理系统
             this.员工工资报表ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.G)));
             this.员工工资报表ToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
-            this.员工工资报表ToolStripMenuItem.Text = "员工工资报表";
+            this.员工工资报表ToolStripMenuItem.Text = "员工信息报表";
+            this.员工工资报表ToolStripMenuItem.Click += new System.EventHandler(this.员工工资报表ToolStripMenuItem_Click);
             // 
             // 员工设置GToolStripMenuItem
             // 
@@ -295,12 +282,7 @@ namespace 餐厅后台管理系统
             // 客人信息设置ToolStripMenuItem
             // 
             this.客人信息设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-
-            this.客人基本信息查询ToolStripMenuItem,
-        
-
             this.客人基本信息查询ToolStripMenuItem});
-
             this.客人信息设置ToolStripMenuItem.Name = "客人信息设置ToolStripMenuItem";
             this.客人信息设置ToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
             this.客人信息设置ToolStripMenuItem.Text = "预定信息设置(&K)";
@@ -312,8 +294,6 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.F9)));
             this.客人基本信息查询ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
             this.客人基本信息查询ToolStripMenuItem.Text = "客人预定基本信息查询";
-            // 
-
             // 
             // 系统设置XToolStripMenuItem
             // 
@@ -501,7 +481,6 @@ namespace 餐厅后台管理系统
         private System.Windows.Forms.ToolStripMenuItem 删除销售品ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 日营业额统计ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 人均消费报表ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 员工工资报表ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 员工设置GToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 添加新员工ToolStripMenuItem;
