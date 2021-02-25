@@ -33,11 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="SunnyUI">
       <HintPath>..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +53,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +93,12 @@
     <Compile Include="FrmYuanGong.Designer.cs">
       <DependentUpon>FrmYuanGong.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmYuanGongBaoBiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYuanGongBaoBiao.Designer.cs">
+      <DependentUpon>FrmYuanGongBaoBiao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmYuanGongChaXun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +119,7 @@
     <Compile Include="FrmXiaoShouPin.Designer.cs">
       <DependentUpon>FrmXiaoShouPin.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmYuanGong.resx">
       <DependentUpon>FrmYuanGong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYuanGongBaoBiao.resx">
+      <DependentUpon>FrmYuanGongBaoBiao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmYuanGongChaXun.resx">
       <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
@@ -132,6 +156,30 @@
     <EmbeddedResource Include="FrmXiaoShouPin.resx">
       <DependentUpon>FrmXiaoShouPin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="员工信息报表.rdlc" />
+    <EmbeddedResource Include="销售统计报表.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -167,6 +215,21 @@
       <Project>{af32e163-c577-4cbc-a072-0dc1ce0e1da3}</Project>
       <Name>HZH_Controls</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
