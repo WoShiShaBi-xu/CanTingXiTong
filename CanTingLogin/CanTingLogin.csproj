@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SunnyUI">
-      <HintPath>..\..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
+      <HintPath>..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

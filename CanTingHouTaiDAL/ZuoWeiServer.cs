@@ -58,5 +58,18 @@ namespace CanTingHouTaiDAL
             }
             return count;
         }
+        public bool UpDateZuoWei( string bol , int id ) {
+            string sql = "update ZuoWei set ZuoWeiTingYong=@bol where ZuoWeiId=@id";
+            SqlParameter [ ] sp ={
+                new SqlParameter("@bol",bol),
+                new SqlParameter("@id",id)
+            };
+
+            int count = db.ExecuteNonQuery( sql , sp );
+            if ( count > 0 ) {
+                return true;
+            }
+            return false;
+        }
     }
 }
