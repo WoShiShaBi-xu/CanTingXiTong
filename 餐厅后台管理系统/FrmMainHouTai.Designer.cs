@@ -54,6 +54,11 @@ namespace 餐厅后台管理系统
             this.删除座位ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.客人信息设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.客人基本信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+           
+
+
+
             this.系统设置XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.前台锁定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -290,7 +295,12 @@ namespace 餐厅后台管理系统
             // 客人信息设置ToolStripMenuItem
             // 
             this.客人信息设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+
+            this.客人基本信息查询ToolStripMenuItem,
+        
+
             this.客人基本信息查询ToolStripMenuItem});
+
             this.客人信息设置ToolStripMenuItem.Name = "客人信息设置ToolStripMenuItem";
             this.客人信息设置ToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
             this.客人信息设置ToolStripMenuItem.Text = "预定信息设置(&K)";
@@ -302,6 +312,8 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.F9)));
             this.客人基本信息查询ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
             this.客人基本信息查询ToolStripMenuItem.Text = "客人预定基本信息查询";
+            // 
+
             // 
             // 系统设置XToolStripMenuItem
             // 
