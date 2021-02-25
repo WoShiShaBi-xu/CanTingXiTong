@@ -20,5 +20,8 @@ namespace CanTingHouTaiBLL
         public int AddZuoWei(List<ZuoWei> list) {
             return zuoWeiServer.AddZuoWei(list);
         }
+        public bool UpDateZuoWei(string bol,int id){
+            return zuoWeiServer.UpDateZuoWei(bol,id);
+        }
     }
 }

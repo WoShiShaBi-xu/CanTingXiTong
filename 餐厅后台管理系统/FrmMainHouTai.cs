@@ -33,12 +33,7 @@ namespace 餐厅后台管理系统
 
         }
 
-        private void 沽清设置ToolStripMenuItem_Click( object sender , EventArgs e ) {
-            FrmKuCun cun = new FrmKuCun();
-            cun.MdiParent = this;
-            cun.Show();
-        }
-
+       
         private void 大厅楼层设置ToolStripMenuItem_Click( object sender , EventArgs e ) {
             FrmLouCeng frm = new FrmLouCeng();
             frm.MdiParent = this;

@@ -33,11 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HZH_Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\HZH_Controls.1.0.14\lib\net40\HZH_Controls.dll</HintPath>
-    </Reference>
     <Reference Include="SunnyUI">
-      <HintPath>..\..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
+      <HintPath>..\..\sunnyUi\SunnyUI\Bin\net40\SunnyUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,18 +60,6 @@
     </Compile>
     <Compile Include="FrmAddZuoWei.Designer.cs">
       <DependentUpon>FrmAddZuoWei.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmKuCun.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmKuCun.Designer.cs">
-      <DependentUpon>FrmKuCun.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLiuShuiDanAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLiuShuiDanAdd.Designer.cs">
-      <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLouCeng.cs">
       <SubType>Form</SubType>
@@ -120,12 +105,6 @@
     <EmbeddedResource Include="FrmAddZuoWei.resx">
       <DependentUpon>FrmAddZuoWei.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmKuCun.resx">
-      <DependentUpon>FrmKuCun.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmLiuShuiDanAdd.resx">
-      <DependentUpon>FrmLiuShuiDanAdd.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmLouCeng.resx">
       <DependentUpon>FrmLouCeng.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,13 +147,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CanTingBLL\CanTingBLL.csproj">
+      <Project>{ed8809de-f7a6-4c2f-8722-05a5c2bd05f3}</Project>
+      <Name>CanTingBLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CanTingHouTaiBLL\CanTingHouTaiBLL.csproj">
       <Project>{af916b8c-db1b-4530-9d9d-ad26266c86ac}</Project>
       <Name>CanTingHouTaiBLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CanTingHouTaiDAL\CanTingHouTaiDAL.csproj">
+      <Project>{a07f6523-6665-4390-9b7c-b02477573848}</Project>
+      <Name>CanTingHouTaiDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CanTingModes\CanTingModes.csproj">
       <Project>{745c4c43-e7d5-4b31-b117-27f0785e61ec}</Project>
       <Name>CanTingModes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetWinformControl-master\HZH_Controls\HZH_Controls\HZH_Controls.csproj">
+      <Project>{af32e163-c577-4cbc-a072-0dc1ce0e1da3}</Project>
+      <Name>HZH_Controls</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

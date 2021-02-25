@@ -14,5 +14,8 @@ namespace CanTingHouTaiBLL
         public List<CengShu> SearchLouCeng() {
             return louCengSeriver.SearchLouCeng();
         }
+        public bool LouCengUpDate(string name,int id){
+            return louCengSeriver.LouCenUpDate(name,id);
+        }
     }
 }

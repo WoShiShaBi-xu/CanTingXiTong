@@ -34,7 +34,6 @@ namespace 餐厅后台管理系统
             this.营业准备ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.座位停用设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.菜品停用设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.沽清设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.大厅楼层设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.销售品设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加销售品ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +54,11 @@ namespace 餐厅后台管理系统
             this.座位维修设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改座位基本信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除座位ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.客人信息设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.客人基本信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加客人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改客人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除客人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统设置XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.前台锁定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,11 +76,6 @@ namespace 餐厅后台管理系统
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.客人基本信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.添加客人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改客人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除客人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.客人信息设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +106,6 @@ namespace 餐厅后台管理系统
             this.营业准备ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.座位停用设置ToolStripMenuItem,
             this.菜品停用设置ToolStripMenuItem,
-            this.沽清设置ToolStripMenuItem,
             this.大厅楼层设置ToolStripMenuItem});
             this.营业准备ToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.营业准备ToolStripMenuItem.Name = "营业准备ToolStripMenuItem";
@@ -119,7 +117,7 @@ namespace 餐厅后台管理系统
             this.座位停用设置ToolStripMenuItem.Name = "座位停用设置ToolStripMenuItem";
             this.座位停用设置ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.Y)));
-            this.座位停用设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
+            this.座位停用设置ToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
             this.座位停用设置ToolStripMenuItem.Text = "座位停/用设置";
             this.座位停用设置ToolStripMenuItem.Click += new System.EventHandler(this.座位停用设置ToolStripMenuItem_Click_1);
             // 
@@ -128,25 +126,16 @@ namespace 餐厅后台管理系统
             this.菜品停用设置ToolStripMenuItem.Name = "菜品停用设置ToolStripMenuItem";
             this.菜品停用设置ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.J)));
-            this.菜品停用设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
+            this.菜品停用设置ToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
             this.菜品停用设置ToolStripMenuItem.Text = "菜品价格设置";
             this.菜品停用设置ToolStripMenuItem.Click += new System.EventHandler(this.菜品停用设置ToolStripMenuItem_Click);
-            // 
-            // 沽清设置ToolStripMenuItem
-            // 
-            this.沽清设置ToolStripMenuItem.Name = "沽清设置ToolStripMenuItem";
-            this.沽清设置ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.K)));
-            this.沽清设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
-            this.沽清设置ToolStripMenuItem.Text = "沽清设置(售完)";
-            this.沽清设置ToolStripMenuItem.Click += new System.EventHandler(this.沽清设置ToolStripMenuItem_Click);
             // 
             // 大厅楼层设置ToolStripMenuItem
             // 
             this.大厅楼层设置ToolStripMenuItem.Name = "大厅楼层设置ToolStripMenuItem";
             this.大厅楼层设置ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.L)));
-            this.大厅楼层设置ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
+            this.大厅楼层设置ToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
             this.大厅楼层设置ToolStripMenuItem.Text = "大厅楼层设置";
             this.大厅楼层设置ToolStripMenuItem.Click += new System.EventHandler(this.大厅楼层设置ToolStripMenuItem_Click);
             // 
@@ -319,6 +308,49 @@ namespace 餐厅后台管理系统
             this.删除座位ToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
             this.删除座位ToolStripMenuItem.Text = "删除座位";
             // 
+            // 客人信息设置ToolStripMenuItem
+            // 
+            this.客人信息设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.客人基本信息查询ToolStripMenuItem,
+            this.添加客人信息ToolStripMenuItem,
+            this.修改客人信息ToolStripMenuItem,
+            this.删除客人信息ToolStripMenuItem});
+            this.客人信息设置ToolStripMenuItem.Name = "客人信息设置ToolStripMenuItem";
+            this.客人信息设置ToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
+            this.客人信息设置ToolStripMenuItem.Text = "预定信息设置(&K)";
+            // 
+            // 客人基本信息查询ToolStripMenuItem
+            // 
+            this.客人基本信息查询ToolStripMenuItem.Name = "客人基本信息查询ToolStripMenuItem";
+            this.客人基本信息查询ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.F9)));
+            this.客人基本信息查询ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
+            this.客人基本信息查询ToolStripMenuItem.Text = "客人预定基本信息查询";
+            // 
+            // 添加客人信息ToolStripMenuItem
+            // 
+            this.添加客人信息ToolStripMenuItem.Name = "添加客人信息ToolStripMenuItem";
+            this.添加客人信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.F10)));
+            this.添加客人信息ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
+            this.添加客人信息ToolStripMenuItem.Text = "添加客人预定信息";
+            // 
+            // 修改客人信息ToolStripMenuItem
+            // 
+            this.修改客人信息ToolStripMenuItem.Name = "修改客人信息ToolStripMenuItem";
+            this.修改客人信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.F11)));
+            this.修改客人信息ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
+            this.修改客人信息ToolStripMenuItem.Text = "修改客人预定信息";
+            // 
+            // 删除客人信息ToolStripMenuItem
+            // 
+            this.删除客人信息ToolStripMenuItem.Name = "删除客人信息ToolStripMenuItem";
+            this.删除客人信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.F12)));
+            this.删除客人信息ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
+            this.删除客人信息ToolStripMenuItem.Text = "删除客人预定信息";
+            // 
             // 系统设置XToolStripMenuItem
             // 
             this.系统设置XToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -468,49 +500,6 @@ namespace 餐厅后台管理系统
             this.toolStripButton7.Text = "退出系统";
             this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
-            // 客人基本信息查询ToolStripMenuItem
-            // 
-            this.客人基本信息查询ToolStripMenuItem.Name = "客人基本信息查询ToolStripMenuItem";
-            this.客人基本信息查询ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.F9)));
-            this.客人基本信息查询ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.客人基本信息查询ToolStripMenuItem.Text = "客人预定基本信息查询";
-            // 
-            // 添加客人信息ToolStripMenuItem
-            // 
-            this.添加客人信息ToolStripMenuItem.Name = "添加客人信息ToolStripMenuItem";
-            this.添加客人信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.F10)));
-            this.添加客人信息ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.添加客人信息ToolStripMenuItem.Text = "添加客人预定信息";
-            // 
-            // 修改客人信息ToolStripMenuItem
-            // 
-            this.修改客人信息ToolStripMenuItem.Name = "修改客人信息ToolStripMenuItem";
-            this.修改客人信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.F11)));
-            this.修改客人信息ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.修改客人信息ToolStripMenuItem.Text = "修改客人预定信息";
-            // 
-            // 删除客人信息ToolStripMenuItem
-            // 
-            this.删除客人信息ToolStripMenuItem.Name = "删除客人信息ToolStripMenuItem";
-            this.删除客人信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.F12)));
-            this.删除客人信息ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.删除客人信息ToolStripMenuItem.Text = "删除客人预定信息";
-            // 
-            // 客人信息设置ToolStripMenuItem
-            // 
-            this.客人信息设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.客人基本信息查询ToolStripMenuItem,
-            this.添加客人信息ToolStripMenuItem,
-            this.修改客人信息ToolStripMenuItem,
-            this.删除客人信息ToolStripMenuItem});
-            this.客人信息设置ToolStripMenuItem.Name = "客人信息设置ToolStripMenuItem";
-            this.客人信息设置ToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
-            this.客人信息设置ToolStripMenuItem.Text = "预定信息设置(&K)";
-            // 
             // FrmMainHouTai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -540,7 +529,6 @@ namespace 餐厅后台管理系统
         private System.Windows.Forms.ToolStripMenuItem 营业准备ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 座位停用设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 菜品停用设置ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 沽清设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 大厅楼层设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 销售品设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 添加销售品ToolStripMenuItem;

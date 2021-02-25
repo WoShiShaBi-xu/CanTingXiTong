@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CanTingModes;
 using System.Data;
-
+using System.Data.SqlClient;
 namespace CanTingHouTaiDAL
 {
     public class LouCengSeriver
@@ -30,6 +30,19 @@ namespace CanTingHouTaiDAL
                 list.Add(cs);
             }
             return list;
+        }
+        public bool LouCenUpDate(string bol,int id){
+            string sql = "update CengShu set CengShuShiFouKeYong=@bol where CengShuId=@id";
+            SqlParameter [ ] sp ={
+                new SqlParameter("@bol",bol),
+                new SqlParameter("@id",id)
+            };
+           int count= db.ExecuteNonQuery(sql,sp);
+            if (count>0) {
+                return true;
+            }
+            return false;
+        
         }
     }
 }
