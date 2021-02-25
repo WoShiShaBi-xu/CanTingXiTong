@@ -120,6 +120,12 @@
     <Compile Include="FrmYuanGongChaXun.Designer.cs">
       <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmYuDinChaXun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYuDinChaXun.Designer.cs">
+      <DependentUpon>FrmYuDinChaXun.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmZuoWei.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,11 +140,11 @@
     <Compile Include="FrmXiaoShouPin.Designer.cs">
       <DependentUpon>FrmXiaoShouPin.cs</DependentUpon>
     </Compile>
-    <Compile Include="RiYinYeE.cs">
+    <Compile Include="FrmRiYinYeE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RiYinYeE.Designer.cs">
-      <DependentUpon>RiYinYeE.cs</DependentUpon>
+    <Compile Include="FrmRiYinYeE.Designer.cs">
+      <DependentUpon>FrmRiYinYeE.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FrmAbout.resx">
@@ -162,6 +168,9 @@
     <EmbeddedResource Include="FrmYuanGongChaXun.resx">
       <DependentUpon>FrmYuanGongChaXun.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmYuDinChaXun.resx">
+      <DependentUpon>FrmYuDinChaXun.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmZuoWei.resx">
       <DependentUpon>FrmZuoWei.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,8 +186,8 @@
     <EmbeddedResource Include="FrmXiaoShouPin.resx">
       <DependentUpon>FrmXiaoShouPin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RiYinYeE.resx">
-      <DependentUpon>RiYinYeE.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRiYinYeE.resx">
+      <DependentUpon>FrmRiYinYeE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="员工信息报表.rdlc" />
     <EmbeddedResource Include="销售统计报表.rdlc" />

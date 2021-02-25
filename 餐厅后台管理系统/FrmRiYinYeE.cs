@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace 餐厅后台管理系统 {
-    public partial class RiYinYeE : Form {
-        public RiYinYeE( ) {
+    public partial class FrmRiYinYeE : Form {
+        public FrmRiYinYeE( ) {
             InitializeComponent();
         }
 

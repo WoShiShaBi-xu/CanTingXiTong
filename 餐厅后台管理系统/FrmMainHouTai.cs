@@ -128,7 +128,7 @@ namespace 餐厅后台管理系统
         }
 
         private void 日营业额统计ToolStripMenuItem_Click( object sender , EventArgs e ) {
-            RiYinYeE ri = new RiYinYeE();
+            FrmRiYinYeE ri = new FrmRiYinYeE();
             ri.MdiParent = this;
             ri.Show();
         }
@@ -137,6 +137,12 @@ namespace 餐厅后台管理系统
             FrmYuanGongBaoBiao frm = new FrmYuanGongBaoBiao();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void 客人基本信息查询ToolStripMenuItem_Click( object sender , EventArgs e ) {
+            FrmYuDinChaXun frm = new FrmYuDinChaXun();
+            frm.MdiParent = this;
+            frm.Show(  );
         }
     }
 }

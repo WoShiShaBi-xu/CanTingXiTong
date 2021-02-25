@@ -52,6 +52,7 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="XiaoShouPinSeriver.cs" />
     <Compile Include="YuanGongMessageAddServer.cs" />
+    <Compile Include="YuDinServer.cs" />
     <Compile Include="ZuoWeiServer.cs" />
   </ItemGroup>
   <ItemGroup>

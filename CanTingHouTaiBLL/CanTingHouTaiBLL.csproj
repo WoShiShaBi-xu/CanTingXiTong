@@ -51,6 +51,7 @@
     <Compile Include="XiaoShouPinManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YuanGongMessageAddManager.cs" />
+    <Compile Include="YuDingManager.cs" />
     <Compile Include="ZuoWeiManager.cs" />
   </ItemGroup>
   <ItemGroup>

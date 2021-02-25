@@ -294,6 +294,7 @@ namespace 餐厅后台管理系统
             | System.Windows.Forms.Keys.F9)));
             this.客人基本信息查询ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
             this.客人基本信息查询ToolStripMenuItem.Text = "客人预定基本信息查询";
+            this.客人基本信息查询ToolStripMenuItem.Click += new System.EventHandler(this.客人基本信息查询ToolStripMenuItem_Click);
             // 
             // 系统设置XToolStripMenuItem
             // 
