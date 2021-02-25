@@ -14,7 +14,7 @@ namespace CanTingModes
         public string YuanGongGender { get; set; }//员工性别
         public DateTime YuanGongShengRi { get; set; }//员工出生日
         public decimal YuanGongGongZi { get; set; }//员工工资
-        public int YuanGongZhiWeiId { get; set; }//员工职位编号
-        public int YuanGongShenFengZheng { get; set; }//员工身份证号
+        public ZhiWei ZhiWei { get; set; }//员工职位
+        public string YuanGongShenFengZheng { get; set; }//员工身份证号
     }
 }

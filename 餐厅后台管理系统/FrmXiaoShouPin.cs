@@ -259,7 +259,13 @@ namespace 餐厅后台管理系统
             utxtKuCun.Text = caiPin.CaiPinKuCun.ToString();
             utxtPrice.Text = caiPin.CaiPinJiaGe.ToString();
             utxtTeJia.Text = caiPin.CaiPinTeJia.ToString();
-            ucmbCaiPinType.Text = caiPin.CaiPinFenLei.CaiPinFenLeiMiaoShu;
+            foreach (CalPinFenLei item in ucmbCaiPinType.Items)
+            {
+                if (item.CaiPinFenLeiMiaoShu==caiPin.CaiPinFenLei.CaiPinFenLeiMiaoShu)
+                {
+                    ucmbCaiPinType.SelectedValue = caiPin.CaiPinFenLei.CaiPinFenLeiId;
+                }
+            }
             ucmbDanWei.Text = caiPin.DanWei.DanWeiMiaoShu;
         }
 

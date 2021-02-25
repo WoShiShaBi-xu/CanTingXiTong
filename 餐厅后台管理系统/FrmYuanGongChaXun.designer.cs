@@ -38,21 +38,21 @@ namespace 餐厅后台管理系统
             this.修改信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uiDataGridView1 = new Sunny.UI.UIDataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvYuanGongMessage = new Sunny.UI.UIDataGridView();
             this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
             this.rbNv = new Sunny.UI.UIRadioButton();
             this.rbNan = new Sunny.UI.UIRadioButton();
-            this.textBoxEx1 = new HZH_Controls.Controls.TextBoxEx();
+            this.txtYuanGongName = new HZH_Controls.Controls.TextBoxEx();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ZhiWeiName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvYuanGongMessage)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -70,12 +70,14 @@ namespace 餐厅后台管理系统
             this.修改信息ToolStripMenuItem.Name = "修改信息ToolStripMenuItem";
             this.修改信息ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.修改信息ToolStripMenuItem.Text = "修改信息";
+            this.修改信息ToolStripMenuItem.Click += new System.EventHandler(this.修改信息ToolStripMenuItem_Click);
             // 
             // 删除ToolStripMenuItem
             // 
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
             this.删除ToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -86,27 +88,6 @@ namespace 餐厅后台管理系统
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(139, 52);
             // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "身份证";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "职位";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "工资";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -116,38 +97,17 @@ namespace 餐厅后台管理系统
             this.label1.TabIndex = 10;
             this.label1.Text = "员工姓名";
             // 
-            // Column4
+            // dgvYuanGongMessage
             // 
-            this.Column4.HeaderText = "生日";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "姓名";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "工号";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // uiDataGridView1
-            // 
-            this.uiDataGridView1.AllowUserToAddRows = false;
-            this.uiDataGridView1.AllowUserToDeleteRows = false;
-            this.uiDataGridView1.AllowUserToResizeColumns = false;
-            this.uiDataGridView1.AllowUserToResizeRows = false;
+            this.dgvYuanGongMessage.AllowUserToAddRows = false;
+            this.dgvYuanGongMessage.AllowUserToDeleteRows = false;
+            this.dgvYuanGongMessage.AllowUserToResizeColumns = false;
+            this.dgvYuanGongMessage.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.uiDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.uiDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.uiDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvYuanGongMessage.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvYuanGongMessage.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvYuanGongMessage.BackgroundColor = System.Drawing.Color.White;
+            this.dgvYuanGongMessage.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 12F);
@@ -155,40 +115,33 @@ namespace 餐厅后台管理系统
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.uiDataGridView1.ColumnHeadersHeight = 32;
-            this.uiDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.uiDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvYuanGongMessage.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvYuanGongMessage.ColumnHeadersHeight = 32;
+            this.dgvYuanGongMessage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvYuanGongMessage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6,
+            this.ZhiWeiName,
             this.Column7});
-            this.uiDataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.uiDataGridView1.EnableHeadersVisualStyles = false;
-            this.uiDataGridView1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.uiDataGridView1.Location = new System.Drawing.Point(12, 101);
-            this.uiDataGridView1.Name = "uiDataGridView1";
-            this.uiDataGridView1.ReadOnly = true;
-            this.uiDataGridView1.RowHeadersWidth = 51;
+            this.dgvYuanGongMessage.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgvYuanGongMessage.EnableHeadersVisualStyles = false;
+            this.dgvYuanGongMessage.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.dgvYuanGongMessage.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            this.dgvYuanGongMessage.Location = new System.Drawing.Point(12, 101);
+            this.dgvYuanGongMessage.Name = "dgvYuanGongMessage";
+            this.dgvYuanGongMessage.ReadOnly = true;
+            this.dgvYuanGongMessage.RowHeadersWidth = 51;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            this.uiDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.uiDataGridView1.RowTemplate.Height = 29;
-            this.uiDataGridView1.SelectedIndex = -1;
-            this.uiDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.uiDataGridView1.ShowGridLine = true;
-            this.uiDataGridView1.Size = new System.Drawing.Size(1103, 472);
-            this.uiDataGridView1.TabIndex = 15;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "性别";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            this.dgvYuanGongMessage.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvYuanGongMessage.RowTemplate.Height = 29;
+            this.dgvYuanGongMessage.SelectedIndex = -1;
+            this.dgvYuanGongMessage.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvYuanGongMessage.ShowGridLine = true;
+            this.dgvYuanGongMessage.Size = new System.Drawing.Size(1103, 472);
+            this.dgvYuanGongMessage.TabIndex = 15;
             // 
             // ucBtnExt1
             // 
@@ -215,6 +168,7 @@ namespace 餐厅后台管理系统
             this.ucBtnExt1.TabStop = false;
             this.ucBtnExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
             this.ucBtnExt1.TipsText = "";
+            this.ucBtnExt1.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick_1);
             // 
             // rbNv
             // 
@@ -241,49 +195,107 @@ namespace 餐厅后台管理系统
             this.rbNan.TabIndex = 13;
             this.rbNan.Text = "男";
             // 
-            // textBoxEx1
+            // txtYuanGongName
             // 
-            this.textBoxEx1.DecLength = 2;
-            this.textBoxEx1.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx1.Location = new System.Drawing.Point(259, 31);
-            this.textBoxEx1.MaxValue = new decimal(new int[] {
+            this.txtYuanGongName.DecLength = 2;
+            this.txtYuanGongName.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtYuanGongName.Location = new System.Drawing.Point(259, 31);
+            this.txtYuanGongName.MaxValue = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.textBoxEx1.MinValue = new decimal(new int[] {
+            this.txtYuanGongName.MinValue = new decimal(new int[] {
             1000000,
             0,
             0,
             -2147483648});
-            this.textBoxEx1.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx1.Name = "textBoxEx1";
-            this.textBoxEx1.OldText = null;
-            this.textBoxEx1.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx1.PromptText = "";
-            this.textBoxEx1.RegexPattern = "";
-            this.textBoxEx1.Size = new System.Drawing.Size(259, 25);
-            this.textBoxEx1.TabIndex = 11;
+            this.txtYuanGongName.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtYuanGongName.Name = "txtYuanGongName";
+            this.txtYuanGongName.OldText = null;
+            this.txtYuanGongName.PromptColor = System.Drawing.Color.Gray;
+            this.txtYuanGongName.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtYuanGongName.PromptText = "";
+            this.txtYuanGongName.RegexPattern = "";
+            this.txtYuanGongName.Size = new System.Drawing.Size(259, 25);
+            this.txtYuanGongName.TabIndex = 11;
             // 
-            // FrmYuanGongChaXunTwo
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "YuanGongId";
+            this.Column1.HeaderText = "工号";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "YuanGongXingMing";
+            this.Column2.HeaderText = "姓名";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "YuanGongGender";
+            this.Column3.HeaderText = "性别";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "YuanGongShengRi";
+            this.Column4.HeaderText = "生日";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "YuanGongGongZi";
+            this.Column5.HeaderText = "工资";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // ZhiWeiName
+            // 
+            this.ZhiWeiName.DataPropertyName = "ZhiWeiMIngCheng";
+            this.ZhiWeiName.HeaderText = "职位";
+            this.ZhiWeiName.MinimumWidth = 6;
+            this.ZhiWeiName.Name = "ZhiWeiName";
+            this.ZhiWeiName.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "YuanGongShenFengZheng";
+            this.Column7.HeaderText = "身份证";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // FrmYuanGongChaXun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 599);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.uiDataGridView1);
+            this.Controls.Add(this.dgvYuanGongMessage);
             this.Controls.Add(this.ucBtnExt1);
             this.Controls.Add(this.rbNv);
             this.Controls.Add(this.rbNan);
-            this.Controls.Add(this.textBoxEx1);
+            this.Controls.Add(this.txtYuanGongName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmYuanGongChaXunTwo";
+            this.MaximizeBox = false;
+            this.Name = "FrmYuanGongChaXun";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "员工查询";
+            this.Load += new System.EventHandler(this.FrmYuanGongChaXun_Load);
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvYuanGongMessage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,18 +307,18 @@ namespace 餐厅后台管理系统
         private System.Windows.Forms.ToolStripMenuItem 修改信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private Sunny.UI.UIDataGridView uiDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private Sunny.UI.UIDataGridView dgvYuanGongMessage;
         private HZH_Controls.Controls.UCBtnExt ucBtnExt1;
         private Sunny.UI.UIRadioButton rbNv;
         private Sunny.UI.UIRadioButton rbNan;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx1;
+        private HZH_Controls.Controls.TextBoxEx txtYuanGongName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ZhiWeiName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

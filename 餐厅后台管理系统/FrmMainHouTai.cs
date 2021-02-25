@@ -112,5 +112,19 @@ namespace 餐厅后台管理系统
         {
 
         }
+
+        private void 添加新员工ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmYuanGong frm = new FrmYuanGong();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void 查询员工基本信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmYuanGongChaXun frm = new FrmYuanGongChaXun();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
